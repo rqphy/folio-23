@@ -1,11 +1,17 @@
 import { createElement } from 'react'
 import './style.scss'
 
-export default function Text({ children, tag, size, color })
+export default function Text({
+    children,
+    tag = 'p',
+    size = 's',
+    color = 'typo',
+    typo = 'main'
+})
 {
     const element = createElement(
         tag,
-        { className: `text size-${size} ${color}` },
+        { className: `text size-${size} color-${color} typo-${typo}` },
         children
     )
     return element

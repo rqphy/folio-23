@@ -5,8 +5,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hello World</h1>
-      <Text tag="h2" size="xl" color="blue" >Hello World 2</Text>
+      <Text tag="h2" size="xl" color='main' >Hello World 2</Text>
+      <Text tag="p" size="l" typo='secondary' >Hello World 2</Text>
+      <Text tag="h5" size="m" typo='secondary' >Hello World 2</Text>
+      <Text tag="h1" size="s" >Hello World 2</Text>
     </div>
   )
 }
