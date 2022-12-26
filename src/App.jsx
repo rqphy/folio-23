@@ -2,7 +2,7 @@ import './App.scss'
 import Text from './Components/Text/Text'
 import Header from './Components/Header/Header'
 import Works from './routes/works'
-import Home from './routes/home'
+import Home from './routes/home/home'
 import { Routes, Route } from 'react-router-dom'
 
 function App() {

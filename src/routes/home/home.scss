@@ -1,0 +1,26 @@
+@import './../../styles/global.scss';
+
+.hero {
+    height: 90vh;
+    width: 100%;
+
+    &__intro {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.main {
+    position: relative;
+    // padding-top: 90vh;
+    height: 200vh;
+    width: 100%;
+    background-color: tomato;
+    z-index: 5;
+}
+
+.about {
+
+}
