@@ -14,13 +14,36 @@
 
 .main {
     position: relative;
-    // padding-top: 90vh;
     height: 200vh;
     width: 100%;
-    background-color: tomato;
+    background-color: var(--color_background);
     z-index: 5;
+    padding: 0 4rem;
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        width: 100%;
+    }
 }
 
 .about {
 
+    &__works {
+        $works-size: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: $works-size;
+        width: $works-size;
+        justify-self: center;
+        border-radius: 50%;
+        background-color: yellow;
+        cursor: pointer;
+    }
+
+    &__content {
+        background-color: bisque;
+    }
 }

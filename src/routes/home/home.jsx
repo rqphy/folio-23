@@ -18,7 +18,12 @@ export default function Home()
         </section>
         <main className='main'>
             <section className="about">
-                test
+                <div className='about__works'>
+                    <Text>Projets</Text>
+                </div>
+                <div className='about__content'>
+
+                </div>
             </section>
         </main>
     </>
