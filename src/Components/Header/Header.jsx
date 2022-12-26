@@ -5,7 +5,7 @@ export default function Header()
 {
     return <>
         <header className='header'>
-            <Text tag='p'>Ferreira Raphaël</Text>
+            <Text tag='p'>Raphaël Ferreira</Text>
             <Text tag='p'>Front-end / Creative developper</Text>
             <nav className='header__nav'>
                 <Text tag='p' size='s'>Projets</Text>
