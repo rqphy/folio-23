@@ -1,16 +1,19 @@
 import './App.scss'
 import Text from './Components/Text/Text'
 import Header from './Components/Header/Header'
+import Works from './routes/works'
+import Home from './routes/home'
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
 
   return (
     <div className="App">
       <Header />
-      <Text tag="h2" size="xl" color='main' >Hello World 2</Text>
-      <Text tag="p" size="l" typo='secondary' >Hello World 2</Text>
-      <Text tag="h5" size="m" typo='secondary' >Hello World 2</Text>
-      <Text tag="h1" size="s" >Hello World 2</Text>
+      <Routes>
+        <Route index element={ <Home /> } />
+        <Route path="works" element={ <Works /> } />
+      </Routes>
     </div>
   )
 }
