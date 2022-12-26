@@ -10,7 +10,7 @@ export default defineConfig({
 	root,
 	plugins: [react()],
 	build: {
-		outDir,
+		ourDir,
 		emptyOutDir: true,
 		rollupOptions: {
 			input: {
