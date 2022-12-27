@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
+import { Link } from 'react-router-dom'
 import Text from '../../Components/Text/Text'
 import './home.scss'
 
@@ -18,11 +19,10 @@ export default function Home()
         </section>
         <main className='main'>
             <section className="about">
-                <div className='about__works'>
+                <Link to="/works" className='about__works'>
                     <Text>Projets</Text>
-                </div>
+                </Link>
                 <div className='about__content'>
-
                 </div>
             </section>
         </main>
