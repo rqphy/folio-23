@@ -16,17 +16,24 @@
             position: relative;
             cursor: pointer;
 
+            &::after {
+                content: '';
+                position: absolute;
+                height: 2px;
+                width: 100%;
+                background-color: var(--color_typo);
+                bottom: -3px;
+                left: 0;
+                transform: scaleX(0);
+                transition: transform .3s ease-in-out;
+                transform-origin: center;
+            }
+
             &:hover {
                 position: relative;
-
+                
                 &::after {
-                    content: '';
-                    position: absolute;
-                    height: 2px;
-                    width: 100%;
-                    background-color: var(--color_typo);
-                    bottom: 0;
-                    left: 0;
+                    transform: scaleX(1);
                 }
             }
 
