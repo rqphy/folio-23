@@ -15,7 +15,6 @@ export default function Header()
                     <Text tag='p' size='s'>Projets</Text>
                 </Link>
                 <Text tag='p' size='s'>À Propos</Text>
-                <Text tag='p' size='s'>Contact</Text>
             </nav>
         </header>
     </>
