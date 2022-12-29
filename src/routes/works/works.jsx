@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
 import Text from '../../Components/Text/Text'
+import WorkList from '../../Components/WorkList/WorkList'
 import './works.scss'
 
 export default function Works()
@@ -15,7 +16,9 @@ export default function Works()
             <div className="works__title">
                 <Text tag='h1' size='l' >Projets</Text>
             </div>
-            <div className='works__canvas'></div>
+            <div className='works__canvas'>
+                <WorkList />
+            </div>
         </section>
     </>
 }
