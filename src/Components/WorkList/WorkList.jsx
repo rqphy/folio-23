@@ -1,8 +1,13 @@
+import { MeshBasicMaterial } from 'three'
+import { BoxGeometry } from 'three'
 import './WorkList.scss'
 
 export default function WorkList()
 {
     return <>
-        work list
+        <mesh>
+            <boxGeometry />
+            <meshBasicMaterial color="red" />
+        </mesh>
     </>
 }
