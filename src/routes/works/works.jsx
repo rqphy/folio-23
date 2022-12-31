@@ -24,8 +24,8 @@ export default function Works()
                     fov: 45,
                     near: 0.1,
                     far: 2000,
-                    position: [ 0, 20, 0 ]
-                    // position: [ 0, 0, 15 ]
+                    // position: [ 0, 20, 0 ]
+                    position: [ 0, 0, 15 ]
                 } }
                 className='works__canvas'
             >
