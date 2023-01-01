@@ -1,0 +1,14 @@
+.cta {
+    $cta-size: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: $cta-size;
+    width: $cta-size;
+    justify-self: center;
+    border: none;
+    border-radius: 50%;
+    background-color: yellow;
+    cursor: pointer;
+}
