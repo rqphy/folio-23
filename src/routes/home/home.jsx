@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
 import { Link } from 'react-router-dom'
 import Text from '../../Components/Text/Text'
+import Button from '../../Components/Button/Button'
 import './home.scss'
 
 export default function Home()
@@ -19,12 +20,13 @@ export default function Home()
         </section>
         <main className='main'>
             <section className="about">
-                <Link to="/works" className='about__works'>
+                <Button to="/works">
                     <Text>Projets</Text>
-                </Link>
+                </Button>
                 <div className='about__content'>
                 </div>
             </section>
+
         </main>
     </>
 }

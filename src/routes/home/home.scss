@@ -29,20 +29,6 @@
 
 .about {
 
-    &__works {
-        $works-size: 10rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: $works-size;
-        width: $works-size;
-        justify-self: center;
-        border-radius: 50%;
-        background-color: yellow;
-        cursor: pointer;
-    }
-
     &__content {
         background-color: bisque;
     }
