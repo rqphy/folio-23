@@ -45,7 +45,7 @@ export default function WorkList()
                         ]}
                         key={ index }
                     >
-                        <boxGeometry args={[ 4, 5, 1 ]} />
+                        <boxGeometry args={[ 4, 5, .2 ]} />
                         <meshBasicMaterial color={`hsl(${Math.random() * 360}, 100%, 75%)`} />
                     </mesh>
                 ))
