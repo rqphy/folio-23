@@ -1,5 +1,5 @@
 .cta {
-    $cta-size: 10rem;
+    $cta-size: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,6 +9,13 @@
     justify-self: center;
     border: none;
     border-radius: 50%;
-    background-color: yellow;
+    background-color: darksalmon;
     cursor: pointer;
+    transition: width .3s ease-out, height .4s ease-out;
+
+    &:hover {
+        // transform: scale(1.1);
+        height: $cta-size * 1.1;
+        width: $cta-size * 1.1;
+    }
 }
