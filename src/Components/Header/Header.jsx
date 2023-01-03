@@ -14,7 +14,6 @@ export default function Header()
                 <Link to="/works" >
                     <Text tag='p' size='s'>Projets</Text>
                 </Link>
-                <Text tag='p' size='s'>À Propos</Text>
             </nav>
         </header>
     </>
