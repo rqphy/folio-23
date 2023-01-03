@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
-import ReactDOM from 'react-dom/client'
-import Text from '../../Components/Text/Text'
-import WorkList from '../../Components/WorkList/WorkList'
+import Text from '../../Components/text/text'
+import WorkList from '../../Components/workList/workList'
 import { Canvas } from '@react-three/fiber'
 import './works.scss'
 

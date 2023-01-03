@@ -1,5 +1,5 @@
-import Text from '../Text/Text'
-import './style.scss'
+import Text from '../text/text'
+import './header.scss'
 import { Link } from 'react-router-dom'
 
 export default function Header()

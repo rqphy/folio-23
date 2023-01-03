@@ -1,5 +1,4 @@
-import './WorkList.scss'
-
+import './workList.scss'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { useThree, extend } from '@react-three/fiber'
 import { useRef, useEffect } from 'react'

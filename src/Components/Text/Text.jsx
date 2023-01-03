@@ -1,5 +1,5 @@
 import { createElement } from 'react'
-import './style.scss'
+import './text.scss'
 
 export default function Text({
     children,

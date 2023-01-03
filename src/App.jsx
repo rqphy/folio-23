@@ -1,6 +1,6 @@
 import './App.scss'
 import Text from './Components/Text/Text'
-import Header from './Components/Header/Header'
+import Header from './Components/header/header'
 import Works from './routes/works/works'
 import Home from './routes/home/home'
 import { Routes, Route } from 'react-router-dom'

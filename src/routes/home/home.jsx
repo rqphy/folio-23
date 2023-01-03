@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react'
-import ReactDOM from 'react-dom/client'
-import { Link } from 'react-router-dom'
-import Text from '../../Components/Text/Text'
-import Button from '../../Components/Button/Button'
+import Text from '../../Components/text/text'
+import Button from '../../Components/button/button'
 import './home.scss'
 
 export default function Home()
