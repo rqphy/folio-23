@@ -8,3 +8,9 @@ html {
     color: var(--color_typo);
     background-color: var(--color_background);
 }
+
+* {
+    &::selection {
+        background: var(--color_main);
+    }
+}

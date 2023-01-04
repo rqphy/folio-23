@@ -1,3 +1,5 @@
+@import './../../styles/global.scss';
+
 .cta {
     $cta-size: 10rem;
     display: flex;
@@ -9,11 +11,11 @@
     justify-self: center;
     border: none;
     border-radius: 50%;
-    background-color: #ffd60a;
+    background-color: var(--color_main);
     font-weight: 600;
     cursor: pointer;
     transition: width .3s ease-out, height .4s ease-out;
-
+    
     &:hover {
         // transform: scale(1.1);
         height: $cta-size * 1.1;
