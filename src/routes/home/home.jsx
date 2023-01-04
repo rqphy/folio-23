@@ -22,6 +22,7 @@ export default function Home()
                     <Text>Projets</Text>
                 </Button>
                 <div className='about__content'>
+                    <p className='about__pitch'>Je suis Raphaël Ferreira, un développeur front de 21 ans diplômé d'un Bachelor web à Hetic. Je réalise une multitude de projets que je mets en ligne sur github.</p>
                 </div>
             </section>
 

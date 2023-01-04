@@ -30,7 +30,13 @@
 .about {
 
     &__content {
-        height: 10rem;
-        background-color: bisque;
+        // height: 10rem;
+        // background-color: bisque;
+    }
+
+    &__pitch {
+        font-family: var(--font_default);
+        font-size: 3rem;
+        font-weight: 600;
     }
 }
