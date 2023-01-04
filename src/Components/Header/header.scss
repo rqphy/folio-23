@@ -4,9 +4,11 @@
     // background-color: tomato;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-weight: 300;
-    padding: 1rem var(--margin-header-desktop) 0;
+    padding: 1rem var(--margin-header-desktop);
     z-index: 100;
+    backdrop-filter: saturate(180%) blur(20px);
 
     &__nav {
         display: flex;
