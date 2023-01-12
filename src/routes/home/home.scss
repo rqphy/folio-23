@@ -46,3 +46,18 @@
         font-weight: 600;
     }
 }
+
+.experiences, .certificates {
+    margin-top: 2rem;
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+    }
+    
+    &__item {
+        list-style: disc;
+        // padding-left: ;
+    }
+}
