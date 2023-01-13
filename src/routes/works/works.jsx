@@ -18,18 +18,20 @@ export default function Works()
             <div className="works__title">
                 <Text tag='h1' size='l' >Projets</Text>
             </div>
-            <Canvas
-                camera={ {
-                    fov: 45,
-                    near: 0.1,
-                    far: 2000,
-                    // position: [ 0, 20, 0 ]
-                    position: [ 0, 0, 15 ]
-                } }
-                className='works__canvas'
-            >
-                <WorkList />
-            </Canvas>
+            <div className="works__canvas">
+                <Canvas
+                    camera={ {
+                        fov: 45,
+                        near: 0.1,
+                        far: 2000,
+                        // position: [ 0, 20, 0 ]
+                        position: [ 0, 0, 15 ]
+                    } }
+                >
+                    <color args={[ '#00ff00' ]} attach='background' />
+                    <WorkList />
+                </Canvas>
+            </div>
         </section>
     </>
 }
