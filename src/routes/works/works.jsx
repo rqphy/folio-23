@@ -3,6 +3,7 @@ import Text from '../../Components/text/text'
 import WorkList from '../../Components/workList/workList'
 import { Canvas } from '@react-three/fiber'
 import './works.scss'
+import Button from '../../Components/button/button'
 
 
 export default function Works()
@@ -28,9 +29,14 @@ export default function Works()
                         position: [ 0, 0, 15 ]
                     } }
                 >
-                    <color args={[ '#00ff00' ]} attach='background' />
+                    {/* <color args={[ '#00ff00' ]} attach='background' /> */}
                     <WorkList />
                 </Canvas>
+            </div>
+            <div className="works__cta">
+                <Button>
+                    <Text>Découvrir</Text>
+                </Button>
             </div>
         </section>
     </>

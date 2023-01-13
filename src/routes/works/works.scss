@@ -1,6 +1,7 @@
 @import './../../styles/global.scss';
 
 .works__hero {
+    position: relative;
     height: 100vh;
     background-color: var(--color_background);
     padding: 5rem 0;
@@ -14,6 +15,11 @@
 .works__canvas {
     width: 100%;
     height: 80vh;
-    // background-color: tomato;
+}
 
+.works__cta {
+    position: absolute;
+    bottom: 4vh;
+    left: 50%;
+    transform: translateX(-50%);
 }
