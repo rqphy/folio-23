@@ -30,18 +30,18 @@ export default function Home()
                 <ul className="experiences__content">
                     <li className='experiences__item'>
                         <Text>Lactel</Text>
-                        <Text>Wonderstudios</Text>
+                        <Text>@Wonderstudios</Text>
                         <Text>2021</Text>
                     </li>
                     <li className='experiences__item'>
                         <Text>Harmonie Mutuelle</Text>
-                        <Text>Wonderstudios</Text>
+                        <Text>@Wonderstudios</Text>
                         <Text>2021</Text>
                     </li>
                     <li className='experiences__item'>
                         <Text>Addiction Agency</Text>
-                        <Text>Wonderstudios</Text>
-                        <Text>2021</Text>
+                        <Text>@Wonderstudios</Text>
+                        <Text>2022</Text>
                     </li>
                 </ul>
             </section>
