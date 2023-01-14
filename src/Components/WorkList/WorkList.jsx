@@ -57,6 +57,7 @@ export default function WorkList()
                             Math.sin((Math.PI * 2 / numberOfProjects) * index) * circleRadius,
                         ]}
                         key={ index }
+                        name={`LOLOLOL${index}`}
                     >
                         <boxGeometry args={[ 4, 5, .2 ]} />
                         <meshBasicMaterial color={`hsl(${Math.random() * 360}, 100%, 75%)`} />
