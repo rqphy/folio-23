@@ -1,7 +1,8 @@
 import './workList.scss'
+import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-import { useThree, extend } from '@react-three/fiber'
-import { useRef, useEffect } from 'react'
+import { useThree, extend, useFrame } from '@react-three/fiber'
+import { useMemo, useRef, useEffect } from 'react'
 import { PresentationControls } from '@react-three/drei'
 
 extend({ OrbitControls })
@@ -15,14 +16,28 @@ export default function WorkList()
 {
     const { camera, gl } = useThree()
     const projects = useRef([])
+    const raycaster = useMemo(() =>
+    {
+        return new THREE.Raycaster(
+            new THREE.Vector3(0, 5, 6),
+            new THREE.Vector3(0, -1, 0)
+        )
+    }, [])
 
     useEffect(() =>
     {
         for(const project of projects.current)
         {
             project.lookAt(0, 0, 0)
-        } 
+        }
     }, [])
+
+    useFrame(() =>
+    {
+        const intersections = raycaster.intersectObjects(projects.current)
+        // console.log(raycaster.intersectObject(projects.current[0]))
+        console.log(intersections)
+    })
 
     return <>
         {/* <orbitControls args={ [ camera, gl.domElement ] } /> */}
