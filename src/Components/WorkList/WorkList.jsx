@@ -2,7 +2,7 @@ import './workList.scss'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { useThree, extend, useFrame } from '@react-three/fiber'
-import { useMemo, useRef, useEffect } from 'react'
+import { useMemo, useRef, useEffect, useState } from 'react'
 import { PresentationControls } from '@react-three/drei'
 
 extend({ OrbitControls })
@@ -23,6 +23,7 @@ export default function WorkList()
             new THREE.Vector3(0, -1, 0)
         )
     }, [])
+    const [currentProject, setCurrentProject] = useState(null)
 
     useEffect(() =>
     {
@@ -35,7 +36,12 @@ export default function WorkList()
     useFrame(() =>
     {
         const intersections = raycaster.intersectObjects(projects.current)
-        console.log(intersections)
+        if(!intersections[0]) return
+        if(!currentProject || intersections[0].object.name !== currentProject.object.name)
+        {
+            setCurrentProject(intersections[0])
+            console.log(intersections[0].object.name)
+        }
     })
 
     return <>
