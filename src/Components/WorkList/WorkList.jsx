@@ -35,7 +35,6 @@ export default function WorkList()
     useFrame(() =>
     {
         const intersections = raycaster.intersectObjects(projects.current)
-        // console.log(raycaster.intersectObject(projects.current[0]))
         console.log(intersections)
     })
 
