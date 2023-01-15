@@ -12,8 +12,6 @@ export default function Works()
 
     const frontProjectName = useProject((state) => state.frontProjectName)
 
-    console.log('render')
-
     useEffect(() =>
     {
         document.title = 'Projets'
