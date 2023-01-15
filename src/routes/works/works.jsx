@@ -4,10 +4,13 @@ import WorkList from '../../Components/workList/workList'
 import { Canvas } from '@react-three/fiber'
 import './works.scss'
 import Button from '../../Components/button/button'
+import useProject from '../../stores/useProject'
 
 
 export default function Works()
 {
+
+    const frontProject = useProject((state) => state.frontProject)
 
     useEffect(() =>
     {
@@ -35,7 +38,7 @@ export default function Works()
             </div>
             <div className="works__cta">
                 <Button>
-                    <Text>Découvrir</Text>
+                    <Text>Découvrir { frontProject }</Text>
                 </Button>
             </div>
         </section>

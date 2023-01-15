@@ -4,6 +4,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { useThree, extend, useFrame } from '@react-three/fiber'
 import { useMemo, useRef, useEffect, useState } from 'react'
 import { PresentationControls } from '@react-three/drei'
+import useProject from '../../stores/useProject'
 
 extend({ OrbitControls })
 
@@ -24,6 +25,7 @@ export default function WorkList()
         )
     }, [])
     const [currentProject, setCurrentProject] = useState(null)
+    const setFrontProject = useProject((state) => state.setFrontProject)
 
     useEffect(() =>
     {
@@ -40,6 +42,7 @@ export default function WorkList()
         if(!currentProject || intersections[0].object.name !== currentProject.object.name)
         {
             setCurrentProject(intersections[0])
+            setFrontProject(intersections[0].object.name)
             console.log(intersections[0].object.name)
         }
     })
