@@ -3,13 +3,13 @@ import create from 'zustand'
 export default create((set) =>
 {
     return {
-        frontProject: null,
+        frontProjectName: null,
 
         setFrontProject: (project) =>
         {
             set(() =>
             {
-                return { frontProject: project }
+                return { frontProjectName: project }
             })
         }
     }

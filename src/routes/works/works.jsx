@@ -10,7 +10,9 @@ import useProject from '../../stores/useProject'
 export default function Works()
 {
 
-    const frontProject = useProject((state) => state.frontProject)
+    const frontProjectName = useProject((state) => state.frontProjectName)
+
+    console.log('render')
 
     useEffect(() =>
     {
@@ -37,8 +39,8 @@ export default function Works()
                 </Canvas>
             </div>
             <div className="works__cta">
-                <Button>
-                    <Text>Découvrir { frontProject }</Text>
+                <Button to={`/${ frontProjectName }`}>
+                    <Text>Découvrir</Text>
                 </Button>
             </div>
         </section>

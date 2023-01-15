@@ -8,14 +8,11 @@ import useProject from '../../stores/useProject'
 
 extend({ OrbitControls })
 
-// Math.PI * 2 / itemCount
-
 const numberOfProjects = 8
 const circleRadius = 6
 
 export default function WorkList()
 {
-    const { camera, gl } = useThree()
     const projects = useRef([])
     const raycaster = useMemo(() =>
     {
@@ -24,8 +21,8 @@ export default function WorkList()
             new THREE.Vector3(0, -1, 0)
         )
     }, [])
-    const [currentProject, setCurrentProject] = useState(null)
     const setFrontProject = useProject((state) => state.setFrontProject)
+    const frontProjectName = useProject((state) => state.frontProjectName)
 
     useEffect(() =>
     {
@@ -39,23 +36,18 @@ export default function WorkList()
     {
         const intersections = raycaster.intersectObjects(projects.current)
         if(!intersections[0]) return
-        if(!currentProject || intersections[0].object.name !== currentProject.object.name)
+        if(!frontProjectName || intersections[0].object.name !== frontProjectName)
         {
-            setCurrentProject(intersections[0])
             setFrontProject(intersections[0].object.name)
-            console.log(intersections[0].object.name)
         }
     })
 
     return <>
-        {/* <orbitControls args={ [ camera, gl.domElement ] } /> */}
         <PresentationControls
             global
             polar={[ 0, 0 ]}
             config={{ mass: 2, tension: 400 }}
-            // snap={{ mass: 4, tension: 400 }}
         >
-
             {
                 [...Array(numberOfProjects)].map((item, index) => (
                     <mesh
