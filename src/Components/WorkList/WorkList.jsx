@@ -1,12 +1,9 @@
 import './workList.scss'
 import * as THREE from 'three'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-import { useThree, extend, useFrame } from '@react-three/fiber'
+import { useFrame } from '@react-three/fiber'
 import { useMemo, useRef, useEffect, useState } from 'react'
 import { PresentationControls } from '@react-three/drei'
 import useProject from '../../stores/useProject'
-
-extend({ OrbitControls })
 
 const numberOfProjects = 8
 const circleRadius = 6
@@ -21,7 +18,7 @@ export default function WorkList()
             new THREE.Vector3(0, -1, 0)
         )
     }, [])
-    const setFrontProject = useProject((state) => state.setFrontProject)
+    const setFrontProjectName = useProject((state) => state.setFrontProjectName)
     const frontProjectName = useProject((state) => state.frontProjectName)
 
     useEffect(() =>
@@ -38,7 +35,7 @@ export default function WorkList()
         if(!intersections[0]) return
         if(!frontProjectName || intersections[0].object.name !== frontProjectName)
         {
-            setFrontProject(intersections[0].object.name)
+            setFrontProjectName(intersections[0].object.name)
         }
     })
 

@@ -5,7 +5,7 @@ export default create((set) =>
     return {
         frontProjectName: null,
 
-        setFrontProject: (project) =>
+        setFrontProjectName: (project) =>
         {
             set(() =>
             {
