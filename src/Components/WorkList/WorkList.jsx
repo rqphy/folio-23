@@ -2,7 +2,7 @@ import './workList.scss'
 import * as THREE from 'three'
 import { useFrame } from '@react-three/fiber'
 import { useMemo, useRef, useEffect, useState } from 'react'
-import { PresentationControls } from '@react-three/drei'
+import { Image, PresentationControls } from '@react-three/drei'
 import useProject from '../../stores/useProject'
 
 const numberOfProjects = 8
@@ -31,6 +31,7 @@ export default function WorkList()
 
     useFrame(() =>
     {
+        console.log('test')
         const intersections = raycaster.intersectObjects(projects.current)
         if(!intersections[0]) return
         if(!frontProjectName || intersections[0].object.name !== frontProjectName)
@@ -47,7 +48,7 @@ export default function WorkList()
         >
             {
                 [...Array(numberOfProjects)].map((item, index) => (
-                    <mesh
+                    <group
                         ref={ (el) => projects.current[index] = el }
                         position={[
                             Math.cos((Math.PI * 2 / numberOfProjects) * index) * circleRadius,
@@ -57,9 +58,16 @@ export default function WorkList()
                         key={ index }
                         name={`LOLOLOL${index}`}
                     >
-                        <boxGeometry args={[ 4, 5, .2 ]} />
-                        <meshBasicMaterial color={`hsl(${Math.random() * 360}, 100%, 75%)`} />
-                    </mesh>
+                        {/* <mesh>
+                            <boxGeometry args={[ 4, 5, .2 ]} />
+                            <meshBasicMaterial color={`hsl(${Math.random() * 360}, 100%, 75%)`} />
+                        </mesh> */}
+                        <Image
+                            url="/ferrari.jpg"
+                            scale={[ 4, 5, .2 ]}
+                            rotation={[ 0, Math.PI, 0 ]}
+                        />
+                    </group>
                 ))
             }
         </PresentationControls>
