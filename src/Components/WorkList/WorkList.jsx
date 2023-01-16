@@ -31,7 +31,6 @@ export default function WorkList()
 
     useFrame(() =>
     {
-        console.log('test')
         const intersections = raycaster.intersectObjects(projects.current)
         if(!intersections[0]) return
         if(!frontProjectName || intersections[0].object.name !== frontProjectName)
