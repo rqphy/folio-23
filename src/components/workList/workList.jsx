@@ -57,15 +57,16 @@ export default function WorkList()
                         key={ index }
                     >
                         <mesh name={`LOLOLOL${index}`}>
-                            <boxGeometry args={[ 4, 5, .2 ]} />
-                            <meshBasicMaterial color={`hsl(${Math.random() * 360}, 100%, 75%)`} />
+                            <boxGeometry args={[ 4, 5, .01 ]} />
+                            <meshBasicMaterial color='#ffd60a' />
+                            {/* <meshBasicMaterial color={`hsl(${Math.random() * 360}, 100%, 75%)`} /> */}
                         </mesh>
                         <Image
                             url="/ferrari.jpg"
-                            scale={[ 4, 5, .2 ]}
+                            scale={[ 4, 5, .1 ]}
                             rotation={[ 0, Math.PI, 0 ]}
                             transparent={true}
-                            position={[ 0, 0, -0.11 ]}
+                            position={[ 0, 0, -0.01 ]}
                         />
                     </group>
                 ))
