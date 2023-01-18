@@ -21,14 +21,15 @@
             &::after {
                 content: '';
                 position: absolute;
-                height: 2px;
-                width: 100%;
-                background-color: var(--color_typo);
+                height: 120%;
+                width: 120%;
+                left: -10%;
                 bottom: -3px;
-                left: 0;
                 transform: scaleX(0);
                 transition: transform .3s ease-in-out;
-                transform-origin: center;
+                transform-origin: left;
+                background-color: var(--color_main);
+                z-index: -1;
             }
 
             &:hover {
