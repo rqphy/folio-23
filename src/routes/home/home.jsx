@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
-import Text from '../../Components/text/text'
-import Button from '../../Components/button/button'
+import Text from '../../components/text/text'
+import Button from '../../components/button/button'
 import './home.scss'
 
 export default function Home()

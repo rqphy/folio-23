@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
-import Text from '../../Components/text/text'
-import WorkList from '../../Components/workList/workList'
+import Text from '../../components/text/text'
+import WorkList from '../../components/workList/workList'
 import { Canvas } from '@react-three/fiber'
 import './works.scss'
-import Button from '../../Components/button/button'
+import Button from '../../components/button/button'
 import useProject from '../../stores/useProject'
 
 
