@@ -25,20 +25,19 @@ export default function Home()
                     <p className='title__pitch'>Je suis Raphaël Ferreira, un développeur front de 21 ans diplômé d'un Bachelor web à Hetic. Je réalise une multitude de projets que je mets en ligne sur github.</p>
                 </div>
             </section>
-            <section className='about'>
-                <Text>À Propos</Text>
-                <div className="about__content">
-                    <img src="./ferrari.jpg" alt="that's me in a picture" />
-                    <p className='about__description'>
-                        Je suis Raphaël Ferreira, un développeur front de 21 ans diplômé d'un Bachelor web à Hetic. Je réalise une multitude de projets que je mets en ligne sur github.
-                        Je suis Raphaël Ferreira, un développeur front de 21 ans diplômé d'un Bachelor web à Hetic. Je réalise une multitude de projets que je mets en ligne sur github.
-                        Je suis Raphaël Ferreira, un développeur front de 21 ans diplômé d'un Bachelor web à Hetic. Je réalise une multitude de projets que je mets en ligne sur github.
-                    </p>
-                </div>
-            </section>
             <section className='experiences'>
                 <Text>Experiences</Text>
                 <ul className="experiences__content">
+                    <li className='experiences__item'>
+                        <Text>JPG</Text>
+                        <Text>@Wonderstudios</Text>
+                        <Text>2022</Text>
+                    </li>
+                    <li className='experiences__item'>
+                        <Text>Addiction Agency</Text>
+                        <Text>@Wonderstudios</Text>
+                        <Text>2022</Text>
+                    </li>
                     <li className='experiences__item'>
                         <Text>Lactel</Text>
                         <Text>@Wonderstudios</Text>
@@ -49,12 +48,17 @@ export default function Home()
                         <Text>@Wonderstudios</Text>
                         <Text>2021</Text>
                     </li>
-                    <li className='experiences__item'>
-                        <Text>Addiction Agency</Text>
-                        <Text>@Wonderstudios</Text>
-                        <Text>2022</Text>
-                    </li>
                 </ul>
+            </section>
+            <section className='about'>
+                <Text>À Propos</Text>
+                <div className="about__content">
+                    <img srcSet="./ferrari.jpg" alt="that's me in a picture" />
+                    <p className='about__description'>
+                        Je suis Raphaël Ferreira, un développeur front de 21 ans diplômé d'un Bachelor web à Hetic. Je réalise une multitude de projets que je mets en ligne sur github.
+                        Je suis Raphaël Ferreira, un développeur front de 21 ans diplômé d'un Bachelor web à Hetic. Je réalise une multitude de projets que je mets en ligne sur github.
+                    </p>
+                </div>
             </section>
             <section className="certificates">
                 <Text>Diplômes</Text>
@@ -71,7 +75,6 @@ export default function Home()
                     </li>
                 </ul>
             </section>
-
         </main>
     </>
 }
