@@ -27,11 +27,12 @@
         display: grid;
         grid-template-columns: 1fr 3fr;
         width: 100%;
+        margin-top: 2rem;
         max-width: 1246px;
     }
 }
 
-.about {
+.title {
 
     &__content {
         // height: 10rem;
@@ -42,14 +43,12 @@
 
     &__pitch {
         font-family: var(--font_default);
-        font-size: 3rem;
+        font-size: 3.5rem;
         font-weight: 600;
     }
 }
 
 .experiences, .certificates {
-    margin-top: 2rem;
-
     &__content {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -59,5 +58,13 @@
     &__item {
         list-style: disc;
         // padding-left: ;
+    }
+}
+
+.about {
+    &__description {
+        font-family: var(--font_default);
+        font-size: 1.5rem;
+        line-height: 150%;
     }
 }
