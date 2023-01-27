@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Text from '../../components/text/text'
 import Button from '../../components/button/button'
 import './home.scss'
+import Footer from '../../components/footer/footer'
 
 export default function Home()
 {
@@ -75,6 +76,7 @@ export default function Home()
                     </li>
                 </ul>
             </section>
+            <Footer />
         </main>
     </>
 }
