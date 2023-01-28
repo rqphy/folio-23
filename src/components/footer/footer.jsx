@@ -1,6 +1,6 @@
 import './footer.scss'
-import { Link } from 'react-router-dom'
 import Text from '../text/text'
+import Link from '../link/link'
 
 export default function Footer()
 {
