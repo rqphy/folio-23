@@ -16,11 +16,14 @@ footer {
         &__socials {
             display: flex;
             gap: 1rem;
-            justify-self: center;
 
             a {
                 color: var(--color_font);
             }
+        }
+
+        :nth-child(2n) {
+            justify-self: center;
         }
 
         :last-child {
