@@ -3,7 +3,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 14rem;
+    height: 10rem;
     width: 100%;
     overflow: hidden;
     font-family: var(--font_default);
@@ -24,13 +24,10 @@ footer {
         }
     }
 
-    .location {
+    svg {
         position: absolute;
-        bottom: -20%;
-        // transform: scaleY(2);
-        font-weight: 800;
-        white-space: nowrap;
-        font-size: 15vw;
-        // should use svg instead
+        top: 2rem;
+        height: auto;
+        width: 100%;
     }
 }
