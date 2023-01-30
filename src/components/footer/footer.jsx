@@ -6,7 +6,7 @@ export default function Footer()
 {
     return <footer>
         <div className='contact'>
-            <p>Contactez-moi : test@test.com</p>
+            <p>Contactez-moi : fdev.raphael@gmail.com</p>
 
             <Link to="/works" >
                 <Text tag='p' size='s'>Projets</Text>
