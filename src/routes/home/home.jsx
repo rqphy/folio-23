@@ -26,6 +26,16 @@ export default function Home()
                     <p className='title__pitch'>Je suis Raphaël Ferreira, un développeur front de 21 ans diplômé d'un Bachelor web à Hetic. Je réalise une multitude de projets que je mets en ligne sur github.</p>
                 </div>
             </section>
+            <section className='about'>
+                <Text>À Propos</Text>
+                <div className="about__content">
+                    <img srcSet="./me.jpg" alt="that's me in a picture" />
+                    <p className='about__description'>
+                        Je suis Raphaël Ferreira, un développeur front de 21 ans diplômé d'un Bachelor web à Hetic. Je réalise une multitude de projets que je mets en ligne sur github.
+                        Je suis Raphaël Ferreira, un développeur front de 21 ans diplômé d'un Bachelor web à Hetic. Je réalise une multitude de projets que je mets en ligne sur github.
+                    </p>
+                </div>
+            </section>
             <section className='experiences'>
                 <Text>Experiences</Text>
                 <ul className="experiences__content">
@@ -50,16 +60,6 @@ export default function Home()
                         <Text>2021</Text>
                     </li>
                 </ul>
-            </section>
-            <section className='about'>
-                <Text>À Propos</Text>
-                <div className="about__content">
-                    <img srcSet="./me.jpg" alt="that's me in a picture" />
-                    <p className='about__description'>
-                        Je suis Raphaël Ferreira, un développeur front de 21 ans diplômé d'un Bachelor web à Hetic. Je réalise une multitude de projets que je mets en ligne sur github.
-                        Je suis Raphaël Ferreira, un développeur front de 21 ans diplômé d'un Bachelor web à Hetic. Je réalise une multitude de projets que je mets en ligne sur github.
-                    </p>
-                </div>
             </section>
             <section className="certificates">
                 <Text>Diplômes</Text>
