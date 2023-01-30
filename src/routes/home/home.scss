@@ -91,3 +91,54 @@
         // line-height: 150%;
     }
 }
+
+.tools {
+    &__display {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        figure {
+            $logo_size: 6rem;
+            position: relative;
+            padding: $logo_size 0;
+
+            &::before, &::after {
+                position: absolute;
+                display: block;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            &::before {
+                content: url('/front_tools.svg');
+                height: $logo_size * 3;
+                width: $logo_size * 3;
+                animation: tools_anim 20s linear infinite;
+            }
+
+            &::after {
+                content: url('/back_tools.svg');
+                height: $logo_size * 2;
+                width: $logo_size * 2;
+                animation: tools_anim 20s linear infinite reverse;
+            }
+            
+            img {
+                position: relative;
+                height: $logo_size;
+                width: $logo_size;
+                z-index: 2;
+            }
+
+            @keyframes tools_anim {
+                0% {
+                    transform: translate(-50%, -50%) rotate(0deg);
+                }
+                100% {
+                    transform: translate(-50%, -50%) rotate(360deg);
+                }
+            }
+        }
+    }
+}

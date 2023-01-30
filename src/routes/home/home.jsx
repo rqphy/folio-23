@@ -76,6 +76,14 @@ export default function Home()
                     </li>
                 </ul>
             </section>
+            <section className="tools">
+                <Text>Outils</Text>
+                <div className='tools__display'>
+                    <figure>
+                        <img src="/logo.png" alt="raphael ferreira logo" />
+                    </figure>
+                </div>
+            </section>
             <Footer />
         </main>
     </>
