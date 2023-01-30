@@ -34,6 +34,8 @@ export default function Works()
                 >
                     {/* <color args={[ '#00ff00' ]} attach='background' /> */}
                     <WorkList />
+                    <directionalLight position={ [ 3, 10, 10 ] } intensity={ 1 } />
+                    <directionalLight position={ [ -3, 10, 10 ] } intensity={ 1 } />
                 </Canvas>
             </div>
             <div className="works__cta">

@@ -4,6 +4,7 @@ import { useFrame } from '@react-three/fiber'
 import { useMemo, useRef, useEffect, useState } from 'react'
 import { Image, PresentationControls } from '@react-three/drei'
 import useProject from '../../stores/useProject'
+import { MeshStandardMaterial } from 'three'
 
 const numberOfProjects = 8
 const circleRadius = 6
@@ -56,11 +57,14 @@ export default function WorkList()
                         ]}
                         key={ index }
                     >
-                        <mesh name={`LOLOLOL${index}`}>
-                            <boxGeometry args={[ 4, 5, .01 ]} />
-                            <meshBasicMaterial color='#ffd60a' />
-                            {/* <meshBasicMaterial color={`hsl(${Math.random() * 360}, 100%, 75%)`} /> */}
+                        <mesh name={`LOLOLOL${index}`} position={[ 0, 0, 0.05 ]}>
+                            <boxGeometry args={[ 4.3, 5.3, .1 ]} />
+                            <meshStandardMaterial color='#403027' />
                         </mesh>
+                        {/* <mesh name={`LOLOLOL${index}`}>
+                            <boxGeometry args={[ 4.3, 5.3, .01 ]} />
+                            <meshBasicMaterial color='#ffffff' />
+                        </mesh> */}
                         <Image
                             url="/ferrari.jpg"
                             scale={[ 4, 5, .1 ]}
