@@ -39,6 +39,12 @@
         height: 15rem;
         width: 12rem;
         will-change: transform;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
         
         &:nth-child(2n) {
             animation: project_in_x .8s ease-out;
@@ -51,32 +57,26 @@
         &:nth-child(1) {
             top: 6vh;
             left: 20vw;
-            background-color: yellow;
         }
         &:nth-child(2) {
             top: 36vh;
             left: 25vw;
-            background-color: burlywood;
         }
         &:nth-child(3) {
             top: 10vh;
             right: 18vw;
-            background-color: thistle;
         }
         &:nth-child(4) {
             top: 42vh;
             right: 8vw;
-            background-color: teal;
         }
         &:nth-child(5) {
             top: 59vh;
             left: 6vw;
-            background-color: orange;
         }
         &:nth-child(6) {
             top: 54vh;
             right: 34vw;
-            background-color: lavender;
         }
     }
 

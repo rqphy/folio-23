@@ -52,12 +52,12 @@ export default function Home()
                         projects.map((el, index) =>
                         {
                             return (
-                                <div
+                                <figure
                                     key={el.name}
                                     className="hero__project"
                                 >
-                                    {el.name}
-                                </div>
+                                    <img src='./ferrari.jpg' alt={el.name} />
+                                </figure>
                             )
                         })
                     }
