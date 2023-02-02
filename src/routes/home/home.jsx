@@ -46,6 +46,7 @@ export default function Home()
                 <div className="hero__title">
                     <Text typo='secondary' size='xl'>Bienvenue,</Text>
                 </div>
+                <div className="hero__blur"></div>
                 <div className="hero__background">
                     {
                         projects.map((el, index) =>
