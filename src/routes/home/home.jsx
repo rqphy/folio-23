@@ -43,15 +43,24 @@ export default function Home()
     return <>
         <section className="hero">
             <div className='hero__intro'>
-                <Text typo='secondary' size='xl'>Bienvenue,</Text>
-            </div>
-            <div className="hero__background">
-                {
-                    projects.map((el) =>
+                <div className="hero__title">
+                    <Text typo='secondary' size='xl'>Bienvenue,</Text>
+                </div>
+                <div className="hero__background">
                     {
-                        return <div key={el.name} >{el.name}</div>
-                    })
-                }
+                        projects.map((el, index) =>
+                        {
+                            return (
+                                <div
+                                    key={el.name}
+                                    className="hero__project"
+                                >
+                                    {el.name}
+                                </div>
+                            )
+                        })
+                    }
+                </div>
             </div>
         </section>
         <main className='main'>

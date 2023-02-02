@@ -6,9 +6,61 @@
 
     &__intro {
         position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        width: 100%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    &__title {
+        position: relative;
+        z-index: 10;
+    }
+
+    &__background {
+        opacity: 0.4;
+    }
+
+    &__project {
+        position: absolute;
+        height: 10rem;
+        width: 10rem;
+        background-color: tomato;
+
+        &:nth-child(1) {
+            top: 10vh;
+            left: 20vw;
+            background-color: yellow;
+        }
+        &:nth-child(2) {
+            top: 40vh;
+            left: 25vw;
+            background-color: burlywood;
+        }
+        &:nth-child(3) {
+            top: 14vh;
+            right: 18vw;
+            background-color: thistle;
+        }
+        &:nth-child(4) {
+            top: 46vh;
+            right: 8vw;
+            background-color: teal;
+        }
+        &:nth-child(5) {
+            top: 63vh;
+            left: 6vw;
+            background-color: orange;
+        }
+        &:nth-child(6) {
+            top: 58vh;
+            right: 34vw;
+            background-color: lavender;
+        }
     }
 }
 
