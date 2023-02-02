@@ -10,22 +10,28 @@ export default function Home()
     {
         const data = [
             {
-                name: 'TOTO1'
+                name: 'TOTO1',
+                asset: './ferrari.jpg'
             },
             {
-                name: 'TOTO2'
+                name: 'TOTO2',
+                asset: './ferrari.jpg'
             },
             {
-                name: 'TOTO3'
+                name: 'TOTO3',
+                asset: './ferrari.jpg'
             },
             {
-                name: 'TOTO4'
+                name: 'TOTO4',
+                asset: './ferrari.jpg'
             },
             {
-                name: 'TOTO5'
+                name: 'TOTO5',
+                asset: './ferrari.jpg'
             },
             {
-                name: 'TOTO6'
+                name: 'TOTO6',
+                asset: './ferrari.jpg'
             },
         ]
         return data
@@ -56,7 +62,7 @@ export default function Home()
                                     key={el.name}
                                     className="hero__project"
                                 >
-                                    <img src='./ferrari.jpg' alt={el.name} />
+                                    <img src={el.asset} alt={el.name} />
                                 </figure>
                             )
                         })
