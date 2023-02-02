@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Text from '../../components/text/text'
 import Button from '../../components/button/button'
 import './home.scss'
@@ -6,15 +6,52 @@ import Footer from '../../components/footer/footer'
 
 export default function Home()
 {
+    const fetchData = () =>
+    {
+        const data = [
+            {
+                name: 'TOTO1'
+            },
+            {
+                name: 'TOTO2'
+            },
+            {
+                name: 'TOTO3'
+            },
+            {
+                name: 'TOTO4'
+            },
+            {
+                name: 'TOTO5'
+            },
+            {
+                name: 'TOTO6'
+            },
+        ]
+        return data
+    }
+
+    const [projects, setProjects] = useState([])
+
     useEffect(() =>
     {
         document.title = 'Raphaël Ferreira'
+
+        setProjects(fetchData)
     }, [])
 
     return <>
         <section className="hero">
             <div className='hero__intro'>
                 <Text typo='secondary' size='xl'>Bienvenue,</Text>
+            </div>
+            <div className="hero__background">
+                {
+                    projects.map((el) =>
+                    {
+                        return <div key={el.name} >{el.name}</div>
+                    })
+                }
             </div>
         </section>
         <main className='main'>
