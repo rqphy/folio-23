@@ -3,6 +3,7 @@ import Text from '../../components/text/text'
 import Button from '../../components/button/button'
 import './home.scss'
 import Footer from '../../components/footer/footer'
+import Me from '../../components/me/me'
 import { motion, useScroll, useTransform, useSpring } from "framer-motion"
 
 export default function Home()
@@ -42,8 +43,6 @@ export default function Home()
     const { scrollYProgress } = useScroll()
 
     const titleRange = useTransform(scrollYProgress, [0, 0.2], [1, 0])
-
-    const imgRange = useTransform(scrollYProgress, [0.4, 0.7], [40, 0])
 
     useEffect(() =>
     {
@@ -93,13 +92,7 @@ export default function Home()
             <section className='about'>
                 <Text>À Propos</Text>
                 <div className="about__content">
-                    <motion.img
-                        srcSet="./me.jpg"
-                        alt="that's me in a picture"
-                        style={{
-                            y: imgRange,
-                        }}
-                    />
+                    <Me />
                     <p className='about__description'>
                         Je suis Raphaël Ferreira, un développeur front de 21 ans diplômé d'un Bachelor web à Hetic. Je réalise une multitude de projets que je mets en ligne sur github.
                         Je suis Raphaël Ferreira, un développeur front de 21 ans diplômé d'un Bachelor web à Hetic. Je réalise une multitude de projets que je mets en ligne sur github.
