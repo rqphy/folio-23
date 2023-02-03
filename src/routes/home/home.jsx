@@ -1,10 +1,10 @@
+import './home.scss'
 import React, { useEffect, useState } from 'react'
 import Text from '../../components/text/text'
 import Button from '../../components/button/button'
-import './home.scss'
 import Footer from '../../components/footer/footer'
 import Me from '../../components/me/me'
-import { motion, useScroll, useTransform, useSpring } from "framer-motion"
+import Title from '../../components/title/title'
 
 export default function Home()
 {
@@ -40,9 +40,7 @@ export default function Home()
     }
 
     const [projects, setProjects] = useState([])
-    const { scrollYProgress } = useScroll()
 
-    const titleRange = useTransform(scrollYProgress, [0, 0.2], [1, 0])
 
     useEffect(() =>
     {
@@ -54,14 +52,7 @@ export default function Home()
     return <>
         <section className="hero">
             <div className='hero__intro'>
-                <motion.div
-                    className="hero__title"
-                    style={{
-                        opacity: titleRange,
-                    }}
-                >
-                    <Text typo='secondary' size='xl'>Bienvenue,</Text>
-                </motion.div>
+                <Title />
                 <div className="hero__blur"></div>
                 <div className="hero__background">
                     {
