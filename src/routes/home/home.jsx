@@ -3,6 +3,7 @@ import Text from '../../components/text/text'
 import Button from '../../components/button/button'
 import './home.scss'
 import Footer from '../../components/footer/footer'
+import { motion, useScroll, useTransform, useSpring } from "framer-motion"
 
 export default function Home()
 {
@@ -38,6 +39,11 @@ export default function Home()
     }
 
     const [projects, setProjects] = useState([])
+    const { scrollYProgress } = useScroll()
+
+    const titleRange = useTransform(scrollYProgress, [0, 0.2], [1, 0])
+
+    const imgRange = useTransform(scrollYProgress, [0.4, 0.7], [40, 0])
 
     useEffect(() =>
     {
@@ -49,9 +55,14 @@ export default function Home()
     return <>
         <section className="hero">
             <div className='hero__intro'>
-                <div className="hero__title">
+                <motion.div
+                    className="hero__title"
+                    style={{
+                        opacity: titleRange,
+                    }}
+                >
                     <Text typo='secondary' size='xl'>Bienvenue,</Text>
-                </div>
+                </motion.div>
                 <div className="hero__blur"></div>
                 <div className="hero__background">
                     {
@@ -82,7 +93,13 @@ export default function Home()
             <section className='about'>
                 <Text>À Propos</Text>
                 <div className="about__content">
-                    <img srcSet="./me.jpg" alt="that's me in a picture" />
+                    <motion.img
+                        srcSet="./me.jpg"
+                        alt="that's me in a picture"
+                        style={{
+                            y: imgRange,
+                        }}
+                    />
                     <p className='about__description'>
                         Je suis Raphaël Ferreira, un développeur front de 21 ans diplômé d'un Bachelor web à Hetic. Je réalise une multitude de projets que je mets en ligne sur github.
                         Je suis Raphaël Ferreira, un développeur front de 21 ans diplômé d'un Bachelor web à Hetic. Je réalise une multitude de projets que je mets en ligne sur github.
