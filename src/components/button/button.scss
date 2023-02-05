@@ -2,6 +2,9 @@
 
 .cta {
     $cta-size: 10rem;
+    @include medium {
+        $cta-size: 8rem;
+    }
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,6 +18,8 @@
     font-weight: 600;
     cursor: pointer;
     transition: width .3s ease-out, height .4s ease-out;
+
+
     
     &:hover {
         // transform: scale(1.1);
