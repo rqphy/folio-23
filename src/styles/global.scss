@@ -1,12 +1,17 @@
 @import './typography.scss';
 @import './reset.scss';
 @import './vars.scss';
+@import './mixins.scss';
 
 html {
     font-style: var(--font-default);
     font-size: 16px;
     color: var(--color_typo);
     background-color: var(--color_background);
+
+    @include medium {
+        font-size: 14px;
+    }
 }
 
 * {
