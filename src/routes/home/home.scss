@@ -109,6 +109,10 @@
     z-index: 5;
     padding: 0 4rem 1rem;
 
+    @include small {
+        padding: 0 2rem 1rem;
+    }
+
     section, footer {
         max-width: 1246px;
         margin-top: 4rem;
@@ -170,6 +174,10 @@
         grid-template-columns: repeat(3, 1fr);
         justify-content: space-between;
         gap: 1rem;
+        
+        @include small {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
     
     &__item {
@@ -206,6 +214,7 @@
 }
 
 .tools {
+    overflow: hidden;
     &__display {
         display: flex;
         justify-content: center;

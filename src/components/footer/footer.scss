@@ -1,3 +1,5 @@
+@import './../../styles/global.scss';
+
 footer {
     position: relative;
     display: flex;
@@ -9,10 +11,27 @@ footer {
     overflow: hidden;
     font-family: var(--font_default);
 
+    @include small {
+        height: 90px;
+        max-height: 500px;
+    }
+
     .contact {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+
+        @include small {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &__link {
+            @include small {
+                display: none;
+            }
+        }
         
         &__socials {
             display: flex;

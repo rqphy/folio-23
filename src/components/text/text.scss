@@ -3,6 +3,10 @@
 .text {
     &.size-xl {
         font-size: 8rem;
+
+        @include small {
+            font-size: 4.5rem;
+        }
     }
 
     &.size-l {

@@ -8,9 +8,11 @@ export default function Footer()
         <div className='contact'>
             <p>Contactez-moi : fdev.raphael@gmail.com</p>
 
-            <Link to="/works" >
-                <Text tag='p' size='s'>Projets</Text>
-            </Link>
+            <div className="contact__link">
+                <Link to="/works" >
+                    <Text tag='p' size='s'>Projets</Text>
+                </Link>
+            </div>
 
             <ul className="contact__socials">
                 <li>
