@@ -1,3 +1,5 @@
+@import './../../styles/global.scss';
+
 .header {
     position: fixed;
     width: 100%;
@@ -10,8 +12,17 @@
     z-index: 100;
     backdrop-filter: saturate(180%) blur(20px);
 
+    @include small {
+        position: absolute;
+        backdrop-filter: none;
+    }
+
     &__nav {
         display: flex;
         font-weight: 600;
+
+        @include small {
+            display: none;
+        }
     }
 }

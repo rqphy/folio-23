@@ -12,7 +12,7 @@ footer {
     font-family: var(--font_default);
 
     @include small {
-        height: 90px;
+        height: 100px;
         max-height: 500px;
     }
 
@@ -25,6 +25,7 @@ footer {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            gap: 1rem;
         }
 
         &__link {
@@ -36,6 +37,10 @@ footer {
         &__socials {
             display: flex;
             gap: 1rem;
+
+            @include small {
+                gap: 2rem;
+            }
 
             a {
                 position: relative;
@@ -75,5 +80,9 @@ footer {
         top: 2rem;
         height: auto;
         width: 100%;
+
+        @include small {
+            top: 3rem;
+        }
     }
 }

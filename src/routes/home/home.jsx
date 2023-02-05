@@ -1,10 +1,10 @@
 import './home.scss'
 import React, { useEffect, useState } from 'react'
 import Text from '../../components/text/text'
-import Button from '../../components/button/button'
 import Footer from '../../components/footer/footer'
 import Me from '../../components/me/me'
 import Title from '../../components/title/title'
+import Cta from '../../components/cta/cta'
 
 export default function Home()
 {
@@ -73,9 +73,7 @@ export default function Home()
         </section>
         <main className='main'>
             <section className="title">
-                <Button to="/works">
-                    <Text>Projets</Text>
-                </Button>
+                <Cta />
                 <div className='title__content'>
                     <p className='title__pitch'>Je suis Raphaël Ferreira, un développeur front de 21 ans diplômé d'un Bachelor web à Hetic. Je réalise une multitude de projets que je mets en ligne sur github.</p>
                 </div>
