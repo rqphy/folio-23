@@ -122,14 +122,15 @@
 
     .title {
         margin-top: 1rem;
+        @include small {
+            display: flex;
+        }
     }
 }
 
 .title {
 
     &__content {
-        // height: 10rem;
-        // background-color: bisque;
         padding-bottom: 4rem;
         border-bottom: 1px solid var(--color_typo);
     }
@@ -137,6 +138,14 @@
     .cta {
         @include large {
             justify-self: left;
+        }
+
+        @include small {
+            position: fixed;
+            bottom: 4vh;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
         }
     }
 
