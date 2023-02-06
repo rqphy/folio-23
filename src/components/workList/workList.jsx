@@ -1,10 +1,9 @@
 import './workList.scss'
 import * as THREE from 'three'
 import { useFrame } from '@react-three/fiber'
-import { useMemo, useRef, useEffect, useState } from 'react'
+import { useMemo, useRef, useEffect } from 'react'
 import { Image, PresentationControls } from '@react-three/drei'
 import useProject from '../../stores/useProject'
-import { MeshStandardMaterial } from 'three'
 
 const numberOfProjects = 8
 const circleRadius = 6
