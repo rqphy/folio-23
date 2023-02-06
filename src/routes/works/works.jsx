@@ -28,11 +28,9 @@ export default function Works()
                         fov: 45,
                         near: 0.1,
                         far: 2000,
-                        // position: [ 0, 20, 0 ]
                         position: [ 0, 0, 15 ]
                     } }
                 >
-                    {/* <color args={[ '#00ff00' ]} attach='background' /> */}
                     <WorkList />
                     <directionalLight position={ [ 3, 10, 10 ] } intensity={ 1 } />
                     <directionalLight position={ [ -3, 10, 10 ] } intensity={ 1 } />
