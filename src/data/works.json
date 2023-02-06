@@ -15,24 +15,24 @@
         "name": "Light Experience",
         "link": "https://lactel.fr",
         "poster": "/posters/lightxp.jpg",
-        "poster_mini": "/posters/lightxp_mini.jpg"
+        "poster_mini": "/posters/lactel_mini.jpg"
     },
     {
         "name": "Motherssoccer",
         "link": "https://lab.wonderstudios.com/#Mothers-Soccer",
         "poster": "/posters/motherssoccer.jpg",
-        "poster_mini": "/posters/motherssoccer_mini.jpg"
+        "poster_mini": "/posters/lactel_mini.jpg"
     },
     {
         "name": "AEMA",
         "link": "https://aemagroupe.fr/",
         "poster": "/posters/aema.jpg",
-        "poster_mini": "/posters/aema_mini.jpg"
+        "poster_mini": "/posters/lactel_mini.jpg"
     },
     {
         "name": "Addiction Agency",
         "link": "https://www.addiction-agency.com/fr/",
         "poster": "/posters/addiction.jpg",
-        "poster_mini": "/posters/addiction_mini.jpg"
+        "poster_mini": "/posters/lactel_mini.jpg"
     }
 ]

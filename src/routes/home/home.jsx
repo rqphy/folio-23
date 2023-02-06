@@ -5,48 +5,17 @@ import Footer from '../../components/footer/footer'
 import Me from '../../components/me/me'
 import Title from '../../components/title/title'
 import Cta from '../../components/cta/cta'
+import works from '../../data/works.json'
 
 export default function Home()
 {
-    const fetchData = () =>
-    {
-        const data = [
-            {
-                name: 'TOTO1',
-                asset: './ferrari.jpg'
-            },
-            {
-                name: 'TOTO2',
-                asset: './ferrari.jpg'
-            },
-            {
-                name: 'TOTO3',
-                asset: './ferrari.jpg'
-            },
-            {
-                name: 'TOTO4',
-                asset: './ferrari.jpg'
-            },
-            {
-                name: 'TOTO5',
-                asset: './ferrari.jpg'
-            },
-            {
-                name: 'TOTO6',
-                asset: './ferrari.jpg'
-            },
-        ]
-        return data
-    }
-
     const [projects, setProjects] = useState([])
-
 
     useEffect(() =>
     {
         document.title = 'Raphaël Ferreira'
 
-        setProjects(fetchData)
+        setProjects(works)
     }, [])
 
     return <>
@@ -63,7 +32,7 @@ export default function Home()
                                     key={el.name}
                                     className="hero__project"
                                 >
-                                    <img src={el.asset} alt={el.name} />
+                                    <img src={el.poster_mini} alt={el.name} />
                                 </figure>
                             )
                         })
