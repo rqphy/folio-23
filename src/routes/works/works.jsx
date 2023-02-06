@@ -20,7 +20,7 @@ export default function Works()
     return <>
         <section className="works__hero">
             <div className="works__title">
-                <Text tag='h1' size='l' >Projets</Text>
+                <Text tag='h1' size='l' >Projet: { frontProjectName }</Text>
             </div>
             <div className="works__canvas">
                 <Canvas
