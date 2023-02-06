@@ -102,6 +102,11 @@ export default function Home()
                         <Text>2022</Text>
                     </li>
                     <li className='experiences__item'>
+                        <Text>AEMA</Text>
+                        <Text>@Wonderstudios</Text>
+                        <Text>2022</Text>
+                    </li>
+                    <li className='experiences__item'>
                         <Text>Lactel</Text>
                         <Text>@Wonderstudios</Text>
                         <Text>2021</Text>
