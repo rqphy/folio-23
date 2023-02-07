@@ -1,9 +1,10 @@
 import './workList.scss'
 import * as THREE from 'three'
-import { useFrame } from '@react-three/fiber'
+import { useFrame, useLoader } from '@react-three/fiber'
 import { useMemo, useRef, useEffect } from 'react'
 import { Image, PresentationControls } from '@react-three/drei'
 import useProject from '../../stores/useProject'
+import texture from '/public/ferrari.jpg'
 
 const numberOfProjects = 8
 const circleRadius = 6
@@ -20,6 +21,8 @@ export default function WorkList()
     }, [])
     const setFrontProjectName = useProject((state) => state.setFrontProjectName)
     const frontProjectName = useProject((state) => state.frontProjectName)
+
+    const img = useLoader(THREE.TextureLoader, texture)
 
     useEffect(() =>
     {
@@ -60,17 +63,21 @@ export default function WorkList()
                             <boxGeometry args={[ 4.3, 5.3, .1 ]} />
                             <meshStandardMaterial color='#403027' />
                         </mesh>
-                        {/* <mesh name={`LOLOLOL${index}`}>
+                        <mesh name={`LOLOLOL${index}`} position={[ 0, 0, 0 ]}>
                             <boxGeometry args={[ 4.3, 5.3, .01 ]} />
-                            <meshBasicMaterial color='#ffffff' />
-                        </mesh> */}
-                        <Image
+                            <meshStandardMaterial  color='#ffffff' />
+                        </mesh>
+                        <mesh name={`LOLOLOL${index}`} position={[ 0, 0, -0.01 ]}>
+                            <boxGeometry args={[ 4, 5, .01 ]} />
+                            <meshStandardMaterial  map={img} />
+                        </mesh>
+                        {/* <Image
                             url="/ferrari.jpg"
                             scale={[ 4, 5, .1 ]}
                             rotation={[ 0, Math.PI, 0 ]}
                             transparent={true}
                             position={[ 0, 0, -0.01 ]}
-                        />
+                        /> */}
                     </group>
                 ))
             }
