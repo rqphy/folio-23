@@ -44,7 +44,7 @@ export default function Home()
             <section className="title">
                 <Cta />
                 <div className='title__content'>
-                    <p className='title__pitch'>Je suis Raphaël Ferreira, un développeur front de 21 ans diplômé d'un Bachelor web à Hetic. Je réalise une multitude de projets que je mets en ligne sur github.</p>
+                    <p className='title__pitch'>Je suis Raphaël Ferreira, un développeur front passioné et créatif qui adore explorer les solutions de demain.</p>
                 </div>
             </section>
             <section className='about'>
@@ -52,8 +52,8 @@ export default function Home()
                 <div className="about__content">
                     <Me />
                     <p className='about__description'>
-                        Je suis Raphaël Ferreira, un développeur front de 21 ans diplômé d'un Bachelor web à Hetic. Je réalise une multitude de projets que je mets en ligne sur github.
-                        Je suis Raphaël Ferreira, un développeur front de 21 ans diplômé d'un Bachelor web à Hetic. Je réalise une multitude de projets que je mets en ligne sur github.
+                        Je suis un jeune développeur qui aime enrichir mes compétences en créant une multitude de projets que je mets en ligne sur github. 
+                        Lors des 2 dernières années, je me suis formé sur plusieurs framework et librairies chez Wonderstudios, une agence digitale créative à Paris.
                     </p>
                 </div>
             </section>
