@@ -20,7 +20,7 @@ export default function Works()
     return <>
         <section className="works__hero">
             <div className="works__title">
-                <Text color='background' tag='h1' size='l' >{ frontProjectName }</Text>
+                <Text color='typo' tag='h1' size='l' >{ frontProjectName }</Text>
             </div>
             <div className="works__canvas">
                 <Canvas
