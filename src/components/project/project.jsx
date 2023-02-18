@@ -1,9 +1,9 @@
 import * as THREE from 'three'
+import { useRef } from 'react'
+import { useLoader, useFrame, extend } from '@react-three/fiber'
+import { shaderMaterial } from '@react-three/drei'
 import vertexShader from './vertex.glsl'
 import fragmentShader from './fragment.glsl'
-import { useLoader, useFrame, extend } from '@react-three/fiber'
-import { useRef } from 'react'
-import { shaderMaterial } from '@react-three/drei'
 
 const FlagMaterial = shaderMaterial(
     {
@@ -37,16 +37,5 @@ export default function Project({ name, posterURL = '/ferrari.jpg' })
             side={THREE.DoubleSide}
             uTexture={flagTexture}
         />
-        {/* <shaderMaterial
-            ref={ flagMaterial }
-            fragmentShader={ fragmentShader }
-            vertexShader={ vertexShader }
-            side={THREE.DoubleSide}
-            uniforms={{
-                uFrequency: { value: new THREE.Vector2(6, 12) },
-                uTime: { value: 0 },
-                uTexture: { value: flagTexture }
-            }}
-        /> */}
     </mesh>
 }

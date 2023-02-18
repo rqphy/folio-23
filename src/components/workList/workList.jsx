@@ -1,8 +1,8 @@
 import './workList.scss'
 import * as THREE from 'three'
-import { useFrame, useLoader } from '@react-three/fiber'
+import { useFrame } from '@react-three/fiber'
 import { useMemo, useRef, useEffect } from 'react'
-import { Image, PresentationControls } from '@react-three/drei'
+import { PresentationControls } from '@react-three/drei'
 import useProject from '../../stores/useProject'
 import Project from '../project/project'
 
