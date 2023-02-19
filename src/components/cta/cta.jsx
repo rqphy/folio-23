@@ -7,7 +7,7 @@ export default function Cta()
 {
     const { scrollYProgress } = useScroll()
 
-    const titleRange = useTransform(scrollYProgress, [0.95, 1], [1, 0])
+    const titleRange = useTransform(scrollYProgress, [0.93, 0.95], [1, 0])
 
     return <motion.div
         style={{

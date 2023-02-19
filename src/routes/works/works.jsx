@@ -10,7 +10,7 @@ import useProject from '../../stores/useProject'
 export default function Works()
 {
 
-    const frontProjectName = useProject((state) => state.frontProjectName)
+    const frontProject = useProject((state) => state.frontProject)
 
     useEffect(() =>
     {
@@ -20,7 +20,7 @@ export default function Works()
     return <>
         <section className="works__hero">
             <div className="works__title">
-                <Text color='background' tag='h1' size='l' >Projet: { frontProjectName }</Text>
+                <Text color='typo' tag='h1' size='l' >{ frontProject?.name ?? 'Project' }</Text>
             </div>
             <div className="works__canvas">
                 <Canvas
@@ -37,7 +37,7 @@ export default function Works()
                 </Canvas>
             </div>
             <div className="works__cta">
-                <Button to={`/${ frontProjectName }`}>
+                <Button isExternal={ true } to={`${ frontProject?.link }`}>
                     <Text>Découvrir</Text>
                 </Button>
             </div>

@@ -1,12 +1,13 @@
 import './workList.scss'
 import * as THREE from 'three'
-import { useFrame, useLoader } from '@react-three/fiber'
+import { useFrame } from '@react-three/fiber'
 import { useMemo, useRef, useEffect } from 'react'
-import { Image, PresentationControls } from '@react-three/drei'
+import { PresentationControls } from '@react-three/drei'
 import useProject from '../../stores/useProject'
-import texture from '../../assets/posters/lactel.jpg'
+import Project from '../project/project'
+import works from '../../data/works.json'
 
-const numberOfProjects = 8
+const numberOfProjects = works.length
 const circleRadius = 6
 
 export default function WorkList()
@@ -19,10 +20,9 @@ export default function WorkList()
             new THREE.Vector3(0, -1, 0)
         )
     }, [])
-    const setFrontProjectName = useProject((state) => state.setFrontProjectName)
-    const frontProjectName = useProject((state) => state.frontProjectName)
+    const setFrontProject = useProject((state) => state.setFrontProject)
+    const frontProject = useProject((state) => state.frontProject)
 
-    const img = useLoader(THREE.TextureLoader, texture)
 
     useEffect(() =>
     {
@@ -36,9 +36,10 @@ export default function WorkList()
     {
         const intersections = raycaster.intersectObjects(projects.current)
         if(!intersections[0]) return
-        if(!frontProjectName || intersections[0].object.name !== frontProjectName)
+
+        if(!frontProject || intersections[0].object.work.name !== frontProject.name)
         {
-            setFrontProjectName(intersections[0].object.name)
+            setFrontProject(intersections[0].object.work)
         }
     })
 
@@ -49,7 +50,7 @@ export default function WorkList()
             config={{ mass: 2, tension: 400 }}
         >
             {
-                [...Array(numberOfProjects)].map((item, index) => (
+                [...works].map((item, index) => (
                     <group
                         ref={ (el) => projects.current[index] = el }
                         position={[
@@ -59,25 +60,12 @@ export default function WorkList()
                         ]}
                         key={ index }
                     >
-                        <mesh name={`LOLOLOL${index}`} position={[ 0, 0, 0.05 ]}>
+                        <mesh work={item} position={[ 0, 0, 0.05 ]}>
                             <boxGeometry args={[ 4.3, 5.3, .1 ]} />
-                            <meshStandardMaterial color='#403027' />
+                            <meshBasicMaterial transparent opacity={0} />
                         </mesh>
-                        {/* <mesh name={`LOLOLOL${index}`} position={[ 0, 0, 0 ]}>
-                            <boxGeometry args={[ 4.3, 5.3, .01 ]} />
-                            <meshStandardMaterial  color='#ffffff' />
-                        </mesh> */}
-                        <mesh name={`LOLOLOL${index}`} position={[ 0, 0, -0.01 ]}>
-                            <boxGeometry args={[ 4, 5, .01 ]} />
-                            <meshStandardMaterial  map={img} />
-                        </mesh>
-                        {/* <Image
-                            url="/ferrari.jpg"
-                            scale={[ 4, 5, .1 ]}
-                            rotation={[ 0, Math.PI, 0 ]}
-                            transparent={true}
-                            position={[ 0, 0, -0.01 ]}
-                        /> */}
+                        <Project name={item.name} />
+                        {/* <Project name={item.name} posterURL={item.poster} /> */}
                     </group>
                 ))
             }
