@@ -37,7 +37,7 @@ export default function Works()
                 </Canvas>
             </div>
             <div className="works__cta">
-                <Button type="external" to={`/${ frontProject?.link }`}>
+                <Button isExternal={ true } to={`${ frontProject?.link }`}>
                     <Text>Découvrir</Text>
                 </Button>
             </div>
