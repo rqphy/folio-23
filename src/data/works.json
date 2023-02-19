@@ -30,6 +30,18 @@
         "poster_mini": "/mini/lactel_mini.jpg"
     },
     {
+        "name": "AEMA",
+        "link": "https://aemagroupe.fr/",
+        "poster": "/posters/aema.jpg",
+        "poster_mini": "/mini/lactel_mini.jpg"
+    },
+    {
+        "name": "AEMA",
+        "link": "https://aemagroupe.fr/",
+        "poster": "/posters/aema.jpg",
+        "poster_mini": "/mini/lactel_mini.jpg"
+    },
+    {
         "name": "Addiction Agency",
         "link": "https://www.addiction-agency.com/fr/",
         "poster": "/posters/addiction.jpg",

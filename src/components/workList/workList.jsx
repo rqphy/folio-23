@@ -5,8 +5,9 @@ import { useMemo, useRef, useEffect } from 'react'
 import { PresentationControls } from '@react-three/drei'
 import useProject from '../../stores/useProject'
 import Project from '../project/project'
+import works from '../../data/works.json'
 
-const numberOfProjects = 8
+const numberOfProjects = works.length
 const circleRadius = 6
 
 export default function WorkList()
@@ -19,8 +20,8 @@ export default function WorkList()
             new THREE.Vector3(0, -1, 0)
         )
     }, [])
-    const setFrontProjectName = useProject((state) => state.setFrontProjectName)
-    const frontProjectName = useProject((state) => state.frontProjectName)
+    const setFrontProject = useProject((state) => state.setFrontProject)
+    const frontProject = useProject((state) => state.frontProject)
 
 
     useEffect(() =>
@@ -35,9 +36,11 @@ export default function WorkList()
     {
         const intersections = raycaster.intersectObjects(projects.current)
         if(!intersections[0]) return
-        if(!frontProjectName || intersections[0].object.name !== frontProjectName)
+
+        if(!frontProject || intersections[0].object.work.name !== frontProject.name)
         {
-            setFrontProjectName(intersections[0].object.name)
+            setFrontProject(intersections[0].object.work)
+            console.log(intersections[0].object.work)
         }
     })
 
@@ -48,7 +51,7 @@ export default function WorkList()
             config={{ mass: 2, tension: 400 }}
         >
             {
-                [...Array(numberOfProjects)].map((item, index) => (
+                [...works].map((item, index) => (
                     <group
                         ref={ (el) => projects.current[index] = el }
                         position={[
@@ -58,11 +61,12 @@ export default function WorkList()
                         ]}
                         key={ index }
                     >
-                        <mesh name={`LOLOLOL${index}`} position={[ 0, 0, 0.05 ]}>
+                        <mesh work={item} position={[ 0, 0, 0.05 ]}>
                             <boxGeometry args={[ 4.3, 5.3, .1 ]} />
                             <meshBasicMaterial transparent opacity={0} />
                         </mesh>
-                        <Project name={frontProjectName} />
+                        <Project name={item.name} />
+                        {/* <Project name={item.name} posterURL={item.poster} /> */}
                     </group>
                 ))
             }
