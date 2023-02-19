@@ -17,7 +17,6 @@ function ExternalButton({ children, to })
 
 export default function Button({ children, to, isExternal = null })
 {
-    console.log(to)
     return (
         isExternal ?
             <ExternalButton to={to} >{ children }</ExternalButton>
