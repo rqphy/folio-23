@@ -40,7 +40,6 @@ export default function WorkList()
         if(!frontProject || intersections[0].object.work.name !== frontProject.name)
         {
             setFrontProject(intersections[0].object.work)
-            console.log(intersections[0].object.work)
         }
     })
 
