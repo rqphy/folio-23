@@ -27,6 +27,7 @@ export default function Home()
                     {
                         projects.map((el, index) =>
                         {
+                            if(index > 5) return
                             return (
                                 <figure
                                     key={el.name}
