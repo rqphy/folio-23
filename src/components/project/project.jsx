@@ -30,7 +30,7 @@ export default function Project({ name, posterURL = '/ferrari.jpg' })
         flagMaterial.current.uniforms.uTime.value += delta * 2
     })
 
-    return <mesh name={name} position={[ 0, 0, -0.05 ]}>
+    return <mesh name={name} position={[ 0, 0, -0.05 ]} rotation={[ 0, Math.PI, 0 ]}>
         <planeGeometry args={[ 4, 5, 32, 32 ]} />
         <flagMaterial
             ref={ flagMaterial }

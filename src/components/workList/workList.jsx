@@ -23,7 +23,6 @@ export default function WorkList()
     const setFrontProject = useProject((state) => state.setFrontProject)
     const frontProject = useProject((state) => state.frontProject)
 
-
     useEffect(() =>
     {
         for(const project of projects.current)
@@ -64,8 +63,7 @@ export default function WorkList()
                             <boxGeometry args={[ 4.3, 5.3, .1 ]} />
                             <meshBasicMaterial transparent opacity={0} />
                         </mesh>
-                        <Project name={item.name} />
-                        {/* <Project name={item.name} posterURL={item.poster} /> */}
+                        <Project name={item.name} posterURL={item.poster} />
                     </group>
                 ))
             }
