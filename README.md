@@ -10,6 +10,6 @@ My [portfolio](https://www.f-raphael.netlify.app) definitely needs an update. Iâ
 
 ### Fonts
 
-[ClashDisplay]([https://github.com/rqphy/folio-23/blob/main/public/fonts/ClashDisplay_Complete/License/FFL.txt](https://github.com/rqphy/folio-23/blob/main/public/fonts/ClashDisplay_Complete/License/FFL.txt))
+[ClashDisplay](https://github.com/rqphy/folio-23/blob/main/public/fonts/ClashDisplay_Complete/License/FFL.txt)
 
-[Fogtwono5]([https://github.com/rqphy/folio-23/blob/main/public/fonts/fogtwono5/OFL_License.txt](https://github.com/rqphy/folio-23/blob/main/public/fonts/fogtwono5/OFL_License.txt))
+[Fogtwono5](https://github.com/rqphy/folio-23/blob/main/public/fonts/fogtwono5/OFL_License.txt)
