@@ -53,7 +53,7 @@ export default function Home()
                 <div className="about__content">
                     <Me />
                     <p className='about__description'>
-                        Je suis un jeune développeur qui aime enrichir mes compétences en créant une multitude de projets que je mets en ligne sur github. 
+                        Je suis un jeune développeur qui aime enrichir ses compétences en créant une multitude de projets que je mets en ligne sur github. 
                         Lors des 2 dernières années, je me suis formé sur plusieurs framework et librairies chez Wonderstudios, une agence digitale créative à Paris.
                     </p>
                 </div>
