@@ -18,6 +18,10 @@
 .works__title {
     font-weight: 600;
     margin-left: 4rem;
+    @include small {
+        margin: 0 4rem;
+        min-height: 6rem;
+    }
 }
 
 .works__canvas {
