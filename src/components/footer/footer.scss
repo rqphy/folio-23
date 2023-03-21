@@ -1,88 +1,88 @@
-@import './../../styles/global.scss';
+@import "./../../styles/global.scss";
 
 footer {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 12vw;
-    max-height: 200px;
-    width: 100%;
-    overflow: hidden;
-    font-family: var(--font_default);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 17vw;
+	max-height: 200px;
+	width: 100%;
+	overflow: hidden;
+	font-family: var(--font_default);
 
-    @include small {
-        height: 100px;
-        max-height: 500px;
-    }
+	@include small {
+		height: 100px;
+		max-height: 500px;
+	}
 
-    .contact {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+	.contact {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
 
-        @include small {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 1rem;
-        }
+		@include small {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			gap: 1rem;
+		}
 
-        &__link {
-            @include small {
-                display: none;
-            }
-        }
-        
-        &__socials {
-            display: flex;
-            gap: 1rem;
+		&__link {
+			@include small {
+				display: none;
+			}
+		}
 
-            @include small {
-                gap: 2rem;
-            }
+		&__socials {
+			display: flex;
+			gap: 1rem;
 
-            a {
-                position: relative;
-                color: var(--color_font);
-                padding-right: 1rem;
+			@include small {
+				gap: 2rem;
+			}
 
-                &::after {
-                    content: url('/arrow.svg');
-                    // content: '';
-                    position: absolute;
-                    top: 50%;
-                    right: 0;
-                    transform: translateY(-50%);
-                    display: block;
-                    width: .8rem;
-                    height: .8rem;
-                    transition: transform .3s ease-out;
-                }
+			a {
+				position: relative;
+				color: var(--color_font);
+				padding-right: 1rem;
 
-                &:hover::after {
-                    transform: translateY(-50%) rotate(45deg);
-                }
-            }
-        }
+				&::after {
+					content: url("/arrow.svg");
+					// content: '';
+					position: absolute;
+					top: 50%;
+					right: 0;
+					transform: translateY(-50%);
+					display: block;
+					width: 0.8rem;
+					height: 0.8rem;
+					transition: transform 0.3s ease-out;
+				}
 
-        :nth-child(2n) {
-            justify-self: center;
-        }
+				&:hover::after {
+					transform: translateY(-50%) rotate(45deg);
+				}
+			}
+		}
 
-        :last-child {
-            justify-self: end;
-        }
-    }
+		:nth-child(2n) {
+			justify-self: center;
+		}
 
-    svg {
-        position: absolute;
-        top: 2rem;
-        height: auto;
-        width: 100%;
+		:last-child {
+			justify-self: end;
+		}
+	}
 
-        @include small {
-            top: 3rem;
-        }
-    }
+	svg {
+		position: absolute;
+		top: 2rem;
+		height: auto;
+		width: 100%;
+
+		@include small {
+			top: 3rem;
+		}
+	}
 }
