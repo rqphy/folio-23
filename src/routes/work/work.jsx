@@ -16,7 +16,6 @@ export default function Work() {
 			const data = await response.json()
 			const readmeResponse = await fetch(data.download_url)
 			const readmeText = await readmeResponse.text()
-			console.log(readmeText)
 			setReadme(readmeText)
 		}
 
