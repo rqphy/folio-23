@@ -43,6 +43,24 @@
 		}
 	}
 
+	&__links {
+		max-width: 900px;
+		margin: 3rem 0 0;
+		display: flex;
+		gap: 2rem;
+	}
+
+	&__cta {
+		display: block;
+		width: 15rem;
+		padding: 1rem 0;
+		text-align: center;
+		background-color: var(--color_typo);
+		font-family: var(--font_default);
+		color: var(--color_background);
+		font-weight: 500;
+	}
+
 	&__md {
 		--title-margin: 2.5rem;
 		max-width: 900px;

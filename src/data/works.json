@@ -2,56 +2,64 @@
 	"SatelliteStory": {
 		"slug": "SatelliteStory",
 		"name": "Satellite Story",
-		"link": "https://github.com/rqphy/SatelliteStory",
+		"github": "https://github.com/rqphy/SatelliteStory",
+		"live": "https://github.com/rqphy/SatelliteStory",
 		"poster": "/posters/satellite.jpg",
 		"poster_mini": "/mini/satellite.jpg"
 	},
 	"TinyHeaven": {
 		"slug": "TinyHeaven",
 		"name": "Tiny Heaven",
-		"link": "https://github.com/rqphy/TinyHeaven",
+		"github": "https://github.com/rqphy/TinyHeaven",
+		"live": "https://github.com/rqphy/TinyHeaven",
 		"poster": "/posters/tinyheaven.jpg",
 		"poster_mini": "/mini/tinyheaven.jpg"
 	},
 	"Wonderstudios": {
 		"slug": "Wonderstudios",
 		"name": "Wonderstudios",
-		"link": "https://github.com/rqphy/Wonderstudios",
+		"github": "https://github.com/rqphy/Wonderstudios",
+		"live": "https://github.com/rqphy/Wonderstudios",
 		"poster": "/posters/wonderstudios.jpg",
 		"poster_mini": "/mini/wonderstudios.jpg"
 	},
 	"Lactel": {
 		"slug": "Lactel",
 		"name": "Lactel",
-		"link": "https://github.com/rqphy/Lactel",
+		"github": "https://github.com/rqphy/Lactel",
+		"live": "https://github.com/rqphy/Lactel",
 		"poster": "/posters/lactel.jpg",
 		"poster_mini": "/mini/lactel.jpg"
 	},
 	"LightExperience": {
 		"slug": "LightExperience",
 		"name": "Light Experience",
-		"link": "https://github.com/rqphy/LightExperience",
+		"github": "https://github.com/rqphy/LightExperience",
+		"live": "https://github.com/rqphy/LightExperience",
 		"poster": "/posters/light.jpg",
 		"poster_mini": "/mini/light.jpg"
 	},
 	"Motherssoccer": {
 		"slug": "Motherssoccer",
 		"name": "Mother's Soccer",
-		"link": "https://github.com/rqphy/Motherssoccer",
+		"github": "https://github.com/rqphy/Motherssoccer",
+		"live": "https://github.com/rqphy/Motherssoccer",
 		"poster": "/posters/motherssoccer.jpg",
 		"poster_mini": "/mini/motherssoccer.jpg"
 	},
 	"aema": {
 		"slug": "AEMA",
 		"name": "AEMA",
-		"link": "https://github.com/rqphy/aema",
+		"github": "https://github.com/rqphy/aema",
+		"live": "https://github.com/rqphy/aema",
 		"poster": "/posters/aema.jpg",
 		"poster_mini": "/mini/aema.jpg"
 	},
 	"AddictionAgency": {
 		"slug": "AddictionAgency",
 		"name": "Addiction Agency",
-		"link": "https://github.com/rqphy/AddictionAgency",
+		"github": "https://github.com/rqphy/AddictionAgency",
+		"live": "https://github.com/rqphy/AddictionAgency",
 		"poster": "/posters/addiction.jpg",
 		"poster_mini": "/mini/addiction.jpg"
 	}
