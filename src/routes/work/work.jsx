@@ -13,7 +13,14 @@ export default function Work() {
 			<section className="project">
 				<div className="project__intro"></div>
 				<div className="project__content">
-					<h1>{slug}</h1>
+					<figure className="project__hero"></figure>
+					<div className="project__md">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Aperiam, aliquid magnam? Illo aperiam aspernatur eos,
+						maiores fugiat odit, deleniti alias exercitationem
+						tenetur soluta culpa ex, porro adipisci atque?
+						Reiciendis, quisquam.
+					</div>
 				</div>
 			</section>
 		</>
