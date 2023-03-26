@@ -1,4 +1,3 @@
-import "./home.scss"
 import React, { useEffect, useState } from "react"
 import Text from "../../components/text/text"
 import Footer from "../../components/footer/footer"

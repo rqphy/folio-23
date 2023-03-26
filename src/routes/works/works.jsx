@@ -1,7 +1,5 @@
 import React, { useEffect, Suspense } from "react"
 import Text from "../../components/text/text"
-
-import "./works.scss"
 import Button from "../../components/button/button"
 import useProject from "../../stores/useProject"
 import Loader from "../../components/loader/loader"

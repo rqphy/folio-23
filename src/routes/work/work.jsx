@@ -1,8 +1,6 @@
 import React, { useEffect } from "react"
 import { useParams } from "react-router-dom"
 
-import "./work.scss"
-
 export default function Work() {
 	const { slug } = useParams()
 
@@ -13,7 +11,10 @@ export default function Work() {
 	return (
 		<>
 			<section className="project">
-				<h1>{slug}</h1>
+				<div className="project__intro"></div>
+				<div className="project__content">
+					<h1>{slug}</h1>
+				</div>
 			</section>
 		</>
 	)
