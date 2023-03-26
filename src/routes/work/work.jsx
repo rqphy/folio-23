@@ -13,7 +13,13 @@ export default function Work() {
 			<section className="project">
 				<div className="project__intro"></div>
 				<div className="project__content">
-					<figure className="project__hero"></figure>
+					<figure className="project__hero">
+						<img
+							src="/posters/wonderstudios.jpg"
+							alt=""
+							srcSet=""
+						/>
+					</figure>
 					<div className="project__md">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Aperiam, aliquid magnam? Illo aperiam aspernatur eos,
