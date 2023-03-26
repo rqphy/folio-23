@@ -14,7 +14,7 @@ export default function Cta() {
 			}}
 		>
 			<Button to="/works">
-				<Text>Projets</Text>
+				<Text>Works</Text>
 			</Button>
 		</motion.div>
 	)

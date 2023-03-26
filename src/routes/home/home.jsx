@@ -44,23 +44,22 @@ export default function Home() {
 					<Cta />
 					<div className="title__content">
 						<p className="title__pitch">
-							Je suis Raphaël Ferreira, un développeur freelance
-							passioné et créatif qui explore les solutions de
-							demain.
+							I'm Raphaël Ferreira, a passionate and creative
+							freelance developer who explores tomorrow's
+							solutions.
 						</p>
 					</div>
 				</section>
 				<section className="about">
-					<Text>À Propos</Text>
+					<Text>About</Text>
 					<div className="about__content">
 						<Me />
 						<p className="about__description">
-							Je suis un jeune développeur qui aime enrichir ses
-							compétences en créant une multitude de projets que
-							je mets en ligne sur github. Lors des 2 dernières
-							années, je me suis formé sur plusieurs framework et
-							librairies chez Wonderstudios, une agence digitale
-							créative à Paris.
+							I am a young developer who enjoys improving my
+							skills by creating a multitude of projects that I
+							upload to Github. Over the last two years, I trained
+							on several frameworks and libraries at
+							Wonderstudios, a creative digital agency in Paris.
 						</p>
 					</div>
 				</section>
@@ -95,7 +94,7 @@ export default function Home() {
 					</ul>
 				</section>
 				<section className="certificates">
-					<Text>Diplômes</Text>
+					<Text>Degrees</Text>
 					<ul className="certificates__content">
 						<li className="certificates__item">
 							<Text>Three.js Journey</Text>
@@ -110,7 +109,7 @@ export default function Home() {
 					</ul>
 				</section>
 				<section className="tools">
-					<Text>Outils</Text>
+					<Text>Tools</Text>
 					<div className="tools__display">
 						<figure>
 							<img src="/logo.png" alt="raphael ferreira logo" />

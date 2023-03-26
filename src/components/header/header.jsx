@@ -12,7 +12,7 @@ export default function Header() {
 				<nav className="header__nav">
 					<Link to="/works">
 						<Text tag="p" size="s">
-							Projets
+							Works
 						</Text>
 					</Link>
 				</nav>

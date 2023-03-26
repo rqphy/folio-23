@@ -5,12 +5,12 @@ export default function Footer() {
 	return (
 		<footer>
 			<div className="contact">
-				<p>Contactez-moi : fdev.raphael@gmail.com</p>
+				<p>Contact me : fdev.raphael@gmail.com</p>
 
 				<div className="contact__link">
 					<Link to="/works">
 						<Text tag="p" size="s">
-							Projets
+							Works
 						</Text>
 					</Link>
 				</div>
