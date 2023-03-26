@@ -26,10 +26,7 @@ export default function Works() {
 					</Suspense>
 				</div>
 				<div className="works__cta">
-					<Button
-						isExternal={true}
-						to={`/project/${frontProject?.slug}`}
-					>
+					<Button to={`/project/${frontProject?.slug}`}>
 						<Text>Découvrir</Text>
 					</Button>
 				</div>
