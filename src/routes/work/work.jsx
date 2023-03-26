@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import data from "./../../data/works.json"
+import ReactMarkdown from "react-markdown"
 
 export default function Work() {
 	const { slug } = useParams()
@@ -36,11 +37,7 @@ export default function Work() {
 						/>
 					</figure>
 					<div className="project__md">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Aperiam, aliquid magnam? Illo aperiam aspernatur eos,
-						maiores fugiat odit, deleniti alias exercitationem
-						tenetur soluta culpa ex, porro adipisci atque?
-						Reiciendis, quisquam.
+						<ReactMarkdown>{readme}</ReactMarkdown>
 					</div>
 				</div>
 			</section>
