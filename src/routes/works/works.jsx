@@ -27,7 +27,7 @@ export default function Works() {
 				</div>
 				<div className="works__cta">
 					<Button to={`/project/${frontProject?.slug}`}>
-						<Text>Découvrir</Text>
+						<Text>Discover</Text>
 					</Button>
 				</div>
 			</section>
