@@ -22,11 +22,17 @@ export default function Home() {
 					<Title />
 					<div className="hero__blur"></div>
 					<div className="hero__background">
-						{projects.map((el, index) => {
+						{Object.keys(projects).map((el, index) => {
 							if (index > 5) return
 							return (
-								<figure key={el.name} className="hero__project">
-									<img src={el.poster_mini} alt={el.name} />
+								<figure
+									key={projects[el].name}
+									className="hero__project"
+								>
+									<img
+										src={projects[el].poster_mini}
+										alt={projects[el].name}
+									/>
 								</figure>
 							)
 						})}

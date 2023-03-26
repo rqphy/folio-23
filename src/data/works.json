@@ -1,58 +1,58 @@
-[
-	{
-		"name": "Satellite Story",
+{
+	"SatelliteStory": {
 		"slug": "SatelliteStory",
+		"name": "Satellite Story",
 		"link": "https://github.com/rqphy/SatelliteStory",
 		"poster": "/posters/satellite.jpg",
 		"poster_mini": "/mini/satellite.jpg"
 	},
-	{
-		"name": "Tiny Heaven",
+	"TinyHeaven": {
 		"slug": "TinyHeaven",
+		"name": "Tiny Heaven",
 		"link": "https://github.com/rqphy/TinyHeaven",
 		"poster": "/posters/tinyheaven.jpg",
 		"poster_mini": "/mini/tinyheaven.jpg"
 	},
-	{
-		"name": "Wonderstudios",
+	"Wonderstudios": {
 		"slug": "Wonderstudios",
+		"name": "Wonderstudios",
 		"link": "https://github.com/rqphy/Wonderstudios",
 		"poster": "/posters/wonderstudios.jpg",
 		"poster_mini": "/mini/wonderstudios.jpg"
 	},
-	{
-		"name": "Lactel",
+	"Lactel": {
 		"slug": "Lactel",
+		"name": "Lactel",
 		"link": "https://github.com/rqphy/Lactel",
 		"poster": "/posters/lactel.jpg",
 		"poster_mini": "/mini/lactel.jpg"
 	},
-	{
-		"name": "Light Experience",
+	"LightExperience": {
 		"slug": "LightExperience",
+		"name": "Light Experience",
 		"link": "https://github.com/rqphy/LightExperience",
 		"poster": "/posters/light.jpg",
 		"poster_mini": "/mini/light.jpg"
 	},
-	{
-		"name": "Mother's Soccer",
+	"Motherssoccer": {
 		"slug": "Motherssoccer",
+		"name": "Mother's Soccer",
 		"link": "https://github.com/rqphy/Motherssoccer",
 		"poster": "/posters/motherssoccer.jpg",
 		"poster_mini": "/mini/motherssoccer.jpg"
 	},
-	{
+	"aema": {
+		"slug": "AEMA",
 		"name": "AEMA",
-		"slug": "aema",
 		"link": "https://github.com/rqphy/aema",
 		"poster": "/posters/aema.jpg",
 		"poster_mini": "/mini/aema.jpg"
 	},
-	{
-		"name": "Addiction Agency",
+	"AddictionAgency": {
 		"slug": "AddictionAgency",
+		"name": "Addiction Agency",
 		"link": "https://github.com/rqphy/AddictionAgency",
 		"poster": "/posters/addiction.jpg",
 		"poster_mini": "/mini/addiction.jpg"
 	}
-]
+}

@@ -6,7 +6,7 @@ import useProject from "../../stores/useProject"
 import Project from "../project/project"
 import works from "../../data/works.json"
 
-const numberOfProjects = works.length
+const numberOfProjects = Object.keys(works).length
 const circleRadius = 6
 
 export default function WorkList() {
@@ -45,7 +45,7 @@ export default function WorkList() {
 				polar={[0, 0]}
 				config={{ mass: 2, tension: 400 }}
 			>
-				{[...works].map((item, index) => (
+				{Object.keys(works).map((item, index) => (
 					<group
 						ref={(el) => (projects.current[index] = el)}
 						position={[
@@ -59,11 +59,14 @@ export default function WorkList() {
 						]}
 						key={index}
 					>
-						<mesh work={item} position={[0, 0, 0.05]}>
+						<mesh work={works[item]} position={[0, 0, 0.05]}>
 							<boxGeometry args={[4.3, 5.3, 0.1]} />
 							<meshBasicMaterial transparent opacity={0} />
 						</mesh>
-						<Project name={item.name} posterURL={item.poster} />
+						<Project
+							name={works[item].name}
+							posterURL={works[item].poster}
+						/>
 					</group>
 				))}
 			</PresentationControls>
