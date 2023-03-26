@@ -11,7 +11,7 @@ export default function Work() {
 	useEffect(() => {
 		async function fetchReadme() {
 			const response = await fetch(
-				"https://api.github.com/repos/rqphy/TinyHeaven/readme"
+				`https://api.github.com/repos/rqphy/${slug}/readme`
 			)
 			const data = await response.json()
 			const readmeResponse = await fetch(data.download_url)
