@@ -38,7 +38,7 @@ export default function Work() {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							Voir le code
+							See code
 						</a>
 						<a
 							className="project__cta"
@@ -46,7 +46,7 @@ export default function Work() {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							Voir le site
+							Visit website
 						</a>
 					</div>
 					<div className="project__md">
