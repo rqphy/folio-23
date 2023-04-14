@@ -9,177 +9,179 @@
 @import "./pages/works.scss";
 
 html {
-	font-style: var(--font-default);
-	font-size: 16px;
-	color: var(--color_typo);
-	background-color: var(--color_background);
+    font-style: var(--font-default);
+    font-size: 16px;
+    color: var(--color_typo);
+    background-color: var(--color_background);
 
-	@include medium {
-		font-size: 14px;
-	}
+    @include medium {
+        font-size: 14px;
+    }
 }
 
 * {
-	&::selection {
-		background: var(--color_main);
-	}
+    &::selection {
+        background: var(--color_main);
+    }
 }
 
 .text {
-	&.size-xl {
-		font-size: 8rem;
+    &.size-xl {
+        font-size: 8rem;
 
-		@include small {
-			font-size: 4.5rem;
-		}
-	}
+        @include small {
+            font-size: 4.5rem;
+        }
+    }
 
-	&.size-l {
-		font-size: 2.8rem;
-	}
+    &.size-l {
+        font-size: 2.8rem;
+    }
 
-	&.size-m {
-		font-size: 1.8rem;
-	}
+    &.size-m {
+        font-size: 1.8rem;
+    }
 
-	&.size-s {
-		font-size: 1rem;
-	}
+    &.size-s {
+        font-size: 1rem;
+    }
 
-	&.color-typo {
-		color: var(--color_typo);
-	}
+    &.color-typo {
+        color: var(--color_typo);
+    }
 
-	&.color-main {
-		color: var(--color_main);
-	}
+    &.color-main {
+        color: var(--color_main);
+    }
 
-	&.color-background {
-		color: var(--color_background);
-	}
+    &.color-background {
+        color: var(--color_background);
+    }
 
-	&.typo-main {
-		font-family: var(--font_default);
-	}
+    &.typo-main {
+        font-family: var(--font_default);
+    }
 
-	&.typo-secondary {
-		font-family: var(--font_secondary);
-	}
+    &.typo-secondary {
+        font-family: var(--font_secondary);
+    }
 }
 
 .loader {
-	position: fixed;
-	top: 0;
-	left: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	width: 100%;
-	background-color: #ffffff;
-	z-index: 200;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 200;
 
-	svg {
-		animation: rotating 2.79s cubic-bezier(0.65, 0.54, 0.12, 0.93) infinite;
-	}
+    svg {
+        animation: rotating 2.79s cubic-bezier(0.65, 0.54, 0.12, 0.93) infinite;
+    }
 }
 
 @keyframes rotating {
-	from {
-		transform: rotate(-720deg);
-	}
-	to {
-		transform: none;
-	}
+    from {
+        transform: rotate(-720deg);
+    }
+    to {
+        transform: none;
+    }
 }
 
 .link {
-	position: relative;
-	cursor: pointer;
+    position: relative;
+    cursor: pointer;
 
-	&::after {
-		content: "";
-		position: absolute;
-		height: 120%;
-		width: 120%;
-		left: -10%;
-		bottom: -3px;
-		transform: scaleX(0);
-		transition: transform 0.3s ease-in-out;
-		transform-origin: left;
-		background-color: var(--color_main);
-		z-index: -1;
-	}
+    &::after {
+        content: "";
+        position: absolute;
+        height: 120%;
+        width: 120%;
+        left: -10%;
+        bottom: -3px;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+        transform-origin: left;
+        background-color: var(--color_main);
+        transform-origin: right;
+        z-index: -1;
+    }
 
-	&:hover {
-		position: relative;
+    &:hover {
+        position: relative;
 
-		&::after {
-			transform: scaleX(1);
-		}
-	}
+        &::after {
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+    }
 
-	& + * {
-		margin: 0 0 0 1rem;
+    & + * {
+        margin: 0 0 0 1rem;
 
-		&::before {
-			content: "/";
-			position: absolute;
-			left: -0.75rem;
-			// margin: 0 .25rem;
-		}
-	}
+        &::before {
+            content: "/";
+            position: absolute;
+            left: -0.75rem;
+            // margin: 0 .25rem;
+        }
+    }
 }
 
 .header {
-	position: fixed;
-	width: 100%;
-	// background-color: tomato;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	font-weight: 300;
-	padding: 1rem var(--margin-header-desktop);
-	z-index: 100;
-	backdrop-filter: saturate(180%) blur(20px);
+    position: fixed;
+    width: 100%;
+    // background-color: tomato;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 300;
+    padding: 1rem var(--margin-header-desktop);
+    z-index: 100;
+    backdrop-filter: saturate(180%) blur(20px);
 
-	@include small {
-		position: absolute;
-		backdrop-filter: none;
-	}
+    @include small {
+        position: absolute;
+        backdrop-filter: none;
+    }
 
-	&__nav {
-		display: flex;
-		font-weight: 600;
+    &__nav {
+        display: flex;
+        font-weight: 600;
 
-		@include small {
-			display: none;
-		}
-	}
+        @include small {
+            display: none;
+        }
+    }
 }
 
 .cta {
-	$cta-size: 10rem;
-	@include medium {
-		$cta-size: 8rem;
-	}
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: $cta-size;
-	width: $cta-size;
-	justify-self: center;
-	border: none;
-	border-radius: 50%;
-	background-color: var(--color_main);
-	font-weight: 600;
-	cursor: pointer;
-	transition: width 0.3s ease-out, height 0.4s ease-out;
+    $cta-size: 10rem;
+    @include medium {
+        $cta-size: 8rem;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: $cta-size;
+    width: $cta-size;
+    justify-self: center;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color_main);
+    font-weight: 600;
+    cursor: pointer;
+    transition: width 0.3s ease-out, height 0.4s ease-out;
 
-	&:hover {
-		// transform: scale(1.1);
-		height: $cta-size * 1.1;
-		width: $cta-size * 1.1;
-	}
+    &:hover {
+        // transform: scale(1.1);
+        height: $cta-size * 1.1;
+        width: $cta-size * 1.1;
+    }
 }
