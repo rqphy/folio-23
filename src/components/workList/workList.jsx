@@ -2,8 +2,9 @@ import { useFrame } from "@react-three/fiber"
 import Project from "../project/project"
 import { useScroll } from "@react-three/drei"
 import { useRef } from "react"
+import works from "../../data/works.json"
 
-const numberOfProject = 10
+const numberOfProject = Object.keys(works).length
 
 export default function Worklist() {
 	const data = useScroll()
@@ -19,7 +20,7 @@ export default function Worklist() {
 
 	return (
 		<group ref={containerRef}>
-			{[...new Array(numberOfProject)].map((el, index) => (
+			{Object.keys(works).map((item, index) => (
 				<Project
 					key={index}
 					position={[index * 0.5, index * -0.5, 0]}
