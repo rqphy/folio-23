@@ -23,7 +23,7 @@ export default function Worklist() {
 			{Object.keys(works).map((item, index) => (
 				<Project
 					key={index}
-					position={[index * 0.5, index * -0.5, 0]}
+					position={[index * 0.8, index * -0.8, 0]}
 					index={index}
 					poster={works[item].poster}
 				/>
