@@ -9,7 +9,7 @@ export default function Experience() {
 				fov: 10,
 			}}
 		>
-			<ScrollControls distance={2} pages={6} damping={0.2}>
+			<ScrollControls distance={2} pages={6}>
 				<WorkList />
 			</ScrollControls>
 			<directionalLight position={[3, 10, 10]} intensity={1} />
