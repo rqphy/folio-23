@@ -1,41 +1,29 @@
-import * as THREE from 'three'
-import { useRef } from 'react'
-import { useLoader, useFrame, extend } from '@react-three/fiber'
-import { shaderMaterial } from '@react-three/drei'
-import vertexShader from './vertex.glsl'
-import fragmentShader from './fragment.glsl'
+import { useRef } from "react"
+import * as THREE from "three"
+import { extend, useFrame } from "@react-three/fiber"
+import WaveShaderMaterial from "../../shaders/wave/wave"
+import { useLoader } from "@react-three/fiber"
 
-const FlagMaterial = shaderMaterial(
-    {
-        uTime: 0,
-        uFrequency: new THREE.Vector2(6, 5),
-        uTexture: new THREE.Texture()
-    },
-    vertexShader,
-    fragmentShader
-)
+extend({ WaveShaderMaterial })
 
-extend({ FlagMaterial })
+export default function Project({ position, index }) {
+	const shaderRef = useRef()
 
-export default function Project({ name, posterURL = '/ferrari.jpg' })
-{
-    const [flagTexture] = useLoader(THREE.TextureLoader, [
-        posterURL
-    ])
+	useFrame(({ clock }) => {
+		// get uTime for shader
+		shaderRef.current.uTime = clock.getElapsedTime()
+	})
+	const [image] = useLoader(THREE.TextureLoader, ["/me.jpg"])
 
-    const flagMaterial = useRef()
-
-    useFrame(( state, delta ) =>
-    {
-        flagMaterial.current.uniforms.uTime.value += delta * 2
-    })
-
-    return <mesh name={name} position={[ 0, 0, -0.05 ]} rotation={[ 0, Math.PI, 0 ]}>
-        <planeGeometry args={[ 4, 5, 32, 32 ]} />
-        <flagMaterial
-            ref={ flagMaterial }
-            side={THREE.DoubleSide}
-            uTexture={flagTexture}
-        />
-    </mesh>
+	return (
+		<mesh position={position}>
+			<planeGeometry args={[0.4, 0.6, 16, 16]} />
+			<waveShaderMaterial
+				ref={shaderRef}
+				uColor={"hotpink"}
+				uTexture={image}
+				uIndex={index}
+			/>
+		</mesh>
+	)
 }
