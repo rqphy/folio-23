@@ -13,9 +13,11 @@ export default function Worklist() {
 	useFrame(() => {
 		const currentScrollOffset = data.offset
 		containerRef.current.position.x =
-			-currentScrollOffset * numberOfProject * 0.45
+			-currentScrollOffset *
+			numberOfProject *
+			((numberOfProject - 1) / 10)
 		containerRef.current.position.y =
-			currentScrollOffset * numberOfProject * 0.45
+			currentScrollOffset * numberOfProject * ((numberOfProject - 1) / 10)
 	})
 
 	return (
