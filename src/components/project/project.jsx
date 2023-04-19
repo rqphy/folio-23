@@ -23,6 +23,7 @@ export default function Project({ position, index }) {
 				uColor={"hotpink"}
 				uTexture={image}
 				uIndex={index}
+				toneMapped={false}
 			/>
 		</mesh>
 	)
