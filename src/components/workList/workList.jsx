@@ -13,11 +13,9 @@ export default function Worklist() {
 	useFrame(() => {
 		const currentScrollOffset = data.offset
 		containerRef.current.position.x =
-			-currentScrollOffset *
-			numberOfProject *
-			((numberOfProject - 1) / 10)
+			-currentScrollOffset * numberOfProject * 0.525
 		containerRef.current.position.y =
-			currentScrollOffset * numberOfProject * ((numberOfProject - 1) / 10)
+			currentScrollOffset * numberOfProject * 0.525
 	})
 
 	return (
@@ -25,7 +23,7 @@ export default function Worklist() {
 			{Object.keys(works).map((item, index) => (
 				<Project
 					key={index}
-					position={[index * 0.8, index * -0.8, 0]}
+					position={[index * 0.6, index * -0.6, 0]}
 					index={index}
 					poster={works[item].poster}
 				/>

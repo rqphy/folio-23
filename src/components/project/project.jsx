@@ -1,4 +1,4 @@
-import { useRef } from "react"
+import { useEffect, useRef } from "react"
 import * as THREE from "three"
 import { extend, useFrame, useThree } from "@react-three/fiber"
 import WaveShaderMaterial from "../../shaders/wave/wave"
@@ -19,7 +19,13 @@ export default function Project({ position, index, poster = "/me.jpg" }) {
 	return (
 		<mesh position={position}>
 			<planeGeometry
-				args={[viewport.width * 0.6, viewport.height * 0.6, 16, 16]}
+				args={[
+					viewport.aspect > 1 ? 0.6 : 0.4,
+					viewport.aspect > 1 ? 0.4 : 0.6,
+					,
+					16,
+					16,
+				]}
 			/>
 			<waveShaderMaterial
 				ref={shaderRef}
