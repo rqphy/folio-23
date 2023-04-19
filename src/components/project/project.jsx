@@ -19,7 +19,7 @@ export default function Project({ position, index, poster = "/me.jpg" }) {
 	return (
 		<mesh position={position}>
 			<planeGeometry
-				args={[viewport.width * 0.8, viewport.height * 0.8, 16, 16]}
+				args={[viewport.width * 0.6, viewport.height * 0.6, 16, 16]}
 			/>
 			<waveShaderMaterial
 				ref={shaderRef}
