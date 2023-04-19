@@ -6,14 +6,14 @@ import { useLoader } from "@react-three/fiber"
 
 extend({ WaveShaderMaterial })
 
-export default function Project({ position, index }) {
+export default function Project({ position, index, poster = "/me.jpg" }) {
 	const shaderRef = useRef()
 
 	useFrame(({ clock }) => {
 		// get uTime for shader
 		shaderRef.current.uTime = clock.getElapsedTime()
 	})
-	const [image] = useLoader(THREE.TextureLoader, ["/me.jpg"])
+	const [image] = useLoader(THREE.TextureLoader, [poster])
 
 	return (
 		<mesh position={position}>

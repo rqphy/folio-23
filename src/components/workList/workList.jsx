@@ -25,6 +25,7 @@ export default function Worklist() {
 					key={index}
 					position={[index * 0.5, index * -0.5, 0]}
 					index={index}
+					poster={works[item].poster}
 				/>
 			))}
 		</group>
