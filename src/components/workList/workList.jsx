@@ -1,6 +1,6 @@
 import { useFrame } from "@react-three/fiber"
 import Project from "../project/project"
-import { useScroll } from "@react-three/drei"
+import { useScroll, Text } from "@react-three/drei"
 import { useRef } from "react"
 import works from "../../data/works.json"
 
@@ -21,12 +21,22 @@ export default function Worklist() {
 	return (
 		<group ref={containerRef}>
 			{Object.keys(works).map((item, index) => (
-				<Project
-					key={index}
-					position={[index * 0.6, index * -0.6, 0]}
-					index={index}
-					poster={works[item].poster}
-				/>
+				<group key={index}>
+					<Project
+						position={[index * 0.6, index * -0.6, 0]}
+						index={index}
+						poster={works[item].poster}
+					/>
+					<Text
+						position={[index * 0.6, index * -0.6, 0.5]}
+						color="black"
+						anchorX="center"
+						anchorY="middle"
+						scale={0.1}
+					>
+						hello world!
+					</Text>
+				</group>
 			))}
 		</group>
 	)
