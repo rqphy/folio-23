@@ -3,12 +3,14 @@ import Project from "../project/project"
 import { useScroll, Text } from "@react-three/drei"
 import { useRef } from "react"
 import works from "../../data/works.json"
+import { useNavigate } from "react-router-dom"
 
 const numberOfProject = Object.keys(works).length
 
 export default function Worklist() {
 	const data = useScroll()
 	const containerRef = useRef()
+	const navigate = useNavigate()
 
 	useFrame(() => {
 		const currentScrollOffset = data.offset
@@ -21,7 +23,10 @@ export default function Worklist() {
 	return (
 		<group ref={containerRef}>
 			{Object.keys(works).map((item, index) => (
-				<group key={index}>
+				<group
+					key={index}
+					onClick={() => navigate(`/work/${works[item].slug}`)}
+				>
 					<Project
 						position={[index * 0.6, index * -0.6, 0]}
 						index={index}
