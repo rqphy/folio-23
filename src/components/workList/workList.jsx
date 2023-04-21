@@ -32,10 +32,10 @@ export default function Worklist() {
 						color="black"
 						anchorX="center"
 						anchorY="middle"
-						scale={0.1}
+						scale={0.07}
 						font="/fonts/fogtwono5/FogtwoNo5.ttf"
 					>
-						hello world!
+						{works[item].name}
 					</Text>
 				</group>
 			))}
