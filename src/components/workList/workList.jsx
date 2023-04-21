@@ -33,6 +33,7 @@ export default function Worklist() {
 						anchorX="center"
 						anchorY="middle"
 						scale={0.1}
+						font="/fonts/fogtwono5/FogtwoNo5.ttf"
 					>
 						hello world!
 					</Text>
