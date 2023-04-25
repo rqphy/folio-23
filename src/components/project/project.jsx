@@ -29,8 +29,8 @@ export default function Project({ position, index, poster = "/me.jpg" }) {
 	return (
 		<mesh
 			position={position}
-			onPointerOver={handleMouseOver}
-			onPointerLeave={handleMouseLeave}
+			// onPointerOver={handleMouseOver}
+			// onPointerLeave={handleMouseLeave}
 		>
 			<planeGeometry
 				args={[
