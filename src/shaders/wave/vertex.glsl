@@ -109,7 +109,7 @@ void main() {
     vec3 pos = position;
     float noiseFreq = 2.0;
     float noiseAmp = 0.2;
-    float noiseSpeed = 0.4;
+    float noiseSpeed = 0.6;
     vec3 noisePos = vec3(pos.x * noiseFreq + uTime * noiseSpeed, pos.y, pos.z);
     pos.z += snoise(noisePos) * noiseAmp;
     vWave = pos.z;
