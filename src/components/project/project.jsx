@@ -21,7 +21,7 @@ export default function Project({ position, index, poster = "/me.jpg" }) {
 
 	useFrame(({ clock }) => {
 		// get uTime for shader
-		if (isHovered.current) return
+		shaderRef.current.uGrayscale = isHovered.current
 		shaderRef.current.uTime += 0.005
 	})
 	const [image] = useLoader(THREE.TextureLoader, [poster])
@@ -29,8 +29,8 @@ export default function Project({ position, index, poster = "/me.jpg" }) {
 	return (
 		<mesh
 			position={position}
-			// onPointerOver={handleMouseOver}
-			// onPointerLeave={handleMouseLeave}
+			onPointerOver={handleMouseOver}
+			onPointerLeave={handleMouseLeave}
 		>
 			<planeGeometry
 				args={[
@@ -42,7 +42,6 @@ export default function Project({ position, index, poster = "/me.jpg" }) {
 			/>
 			<waveShaderMaterial
 				ref={shaderRef}
-				uColor={"hotpink"}
 				uTexture={image}
 				uIndex={index}
 				toneMapped={false}

@@ -6,7 +6,7 @@ import * as THREE from "three"
 const WaveShaderMaterial = shaderMaterial(
 	// Uniform
 	{
-		uColor: new THREE.Color(0, 0, 0),
+		uGrayscale: false,
 		uTime: 0,
 		uTexture: new THREE.Texture(),
 	},
