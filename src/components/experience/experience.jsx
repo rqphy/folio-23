@@ -8,6 +8,7 @@ export default function Experience() {
 		<Canvas
 			camera={{
 				fov: 10,
+				position: [0, 0, 6],
 			}}
 		>
 			<ScrollControls distance={2} pages={4}>

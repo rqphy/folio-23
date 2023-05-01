@@ -6,7 +6,7 @@ import { TWEEN } from "three/examples/jsm/libs/tween.module.min.js"
 
 const animateCamera = (position, camera) => {
 	new TWEEN.Tween(camera.position)
-		.to(position, 1500)
+		.to(position, 1200)
 		.easing(TWEEN.Easing.Quadratic.InOut)
 		.start()
 		.onComplete(function () {
@@ -18,7 +18,7 @@ export default function Intro() {
 	const camera = useThree((state) => state.camera)
 
 	useEffect(() => {
-		animateCamera({ x: 0, y: 0.275, z: 6 }, camera)
+		animateCamera({ x: 0, y: 0, z: 5 }, camera)
 	}, [])
 
 	useFrame((state) => {
