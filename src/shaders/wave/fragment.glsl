@@ -13,7 +13,7 @@ void main()
     float wave = vWave * 0.1;
     vec4 texColor = texture2D(uTexture, vUv + wave);
     vec3 filteredColor = texColor.rgb;
-    vec3 colorFilter = vec3(0.5, 0.5, 0.5);
+    vec3 colorFilter = vec3(0.3, 0.3, 0.3);
 
     if (uGrayscale) {
         filteredColor = texColor.rgb * colorFilter;
