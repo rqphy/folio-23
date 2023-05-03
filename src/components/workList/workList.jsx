@@ -31,7 +31,11 @@ export default function Worklist() {
 					<Project
 						position={[index * 0.6, index * -0.6, 0]}
 						index={index}
-						poster={works[item].poster}
+						poster={
+							viewport.aspect > 1
+								? works[item].poster_big
+								: works[item].poster
+						}
 					/>
 					<Text
 						position={[index * 0.6, index * -0.6, 0.5]}
