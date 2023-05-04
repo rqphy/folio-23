@@ -67,7 +67,7 @@ export default function Work() {
 				<div className="project__intro"></div>
 				<div className="project__content">
 					<figure className="project__hero">
-						<img src={data[slug].poster} alt="" srcSet="" />
+						<img src={data[slug].poster_big} alt="" srcSet="" />
 					</figure>
 					<div className="project__md">
 						<ReactMarkdown>{readme}</ReactMarkdown>
