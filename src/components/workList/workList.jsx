@@ -1,75 +1,54 @@
-import * as THREE from "three"
-import { useFrame } from "@react-three/fiber"
-import { useMemo, useRef, useEffect } from "react"
-import { PresentationControls } from "@react-three/drei"
-import useProject from "../../stores/useProject"
+import { useFrame, useThree } from "@react-three/fiber"
 import Project from "../project/project"
+import { useScroll, Text } from "@react-three/drei"
+import { useRef } from "react"
 import works from "../../data/works.json"
+import { useNavigate } from "react-router-dom"
 
-const numberOfProjects = Object.keys(works).length
-const circleRadius = 6
+const numberOfProject = Object.keys(works).length
 
-export default function WorkList() {
-	const projects = useRef([])
-	const raycaster = useMemo(() => {
-		return new THREE.Raycaster(
-			new THREE.Vector3(0, 5, 6),
-			new THREE.Vector3(0, -1, 0)
-		)
-	}, [])
-	const setFrontProject = useProject((state) => state.setFrontProject)
-	const frontProject = useProject((state) => state.frontProject)
-
-	useEffect(() => {
-		for (const project of projects.current) {
-			project.lookAt(0, 0, 0)
-		}
-	}, [])
+export default function Worklist() {
+	const data = useScroll()
+	const containerRef = useRef()
+	const { viewport } = useThree()
+	const navigate = useNavigate()
 
 	useFrame(() => {
-		const intersections = raycaster.intersectObjects(projects.current)
-		if (!intersections[0]) return
-
-		if (
-			!frontProject ||
-			intersections[0].object.work.name !== frontProject.name
-		) {
-			setFrontProject(intersections[0].object.work)
-		}
+		const currentScrollOffset = data.offset
+		containerRef.current.position.x =
+			-currentScrollOffset * numberOfProject * 0.525
+		containerRef.current.position.y =
+			currentScrollOffset * numberOfProject * 0.525
 	})
 
 	return (
-		<>
-			<PresentationControls
-				global
-				polar={[0, 0]}
-				config={{ mass: 2, tension: 400 }}
-			>
-				{Object.keys(works).map((item, index) => (
-					<group
-						ref={(el) => (projects.current[index] = el)}
-						position={[
-							Math.cos(
-								((Math.PI * 2) / numberOfProjects) * index
-							) * circleRadius,
-							0,
-							Math.sin(
-								((Math.PI * 2) / numberOfProjects) * index
-							) * circleRadius,
-						]}
-						key={index}
+		<group ref={containerRef}>
+			{Object.keys(works).map((item, index) => (
+				<group
+					key={index}
+					onClick={() => navigate(`/work/${works[item].slug}`)}
+				>
+					<Project
+						position={[index * 0.6, index * -0.6, 0]}
+						index={index}
+						poster={
+							viewport.aspect > 1
+								? works[item].poster_big
+								: works[item].poster
+						}
+					/>
+					<Text
+						position={[index * 0.6, index * -0.6, 0.5]}
+						color="white"
+						anchorX="center"
+						anchorY="middle"
+						scale={viewport.aspect > 1 ? 0.07 : 0.05}
+						font="/fonts/fogtwono5/FogtwoNo5.ttf"
 					>
-						<mesh work={works[item]} position={[0, 0, 0.05]}>
-							<boxGeometry args={[4.3, 5.3, 0.1]} />
-							<meshBasicMaterial transparent opacity={0} />
-						</mesh>
-						<Project
-							name={works[item].name}
-							posterURL={works[item].poster}
-						/>
-					</group>
-				))}
-			</PresentationControls>
-		</>
+						{works[item].name}
+					</Text>
+				</group>
+			))}
+		</group>
 	)
 }

@@ -5,7 +5,7 @@
 		"github": "https://github.com/rqphy/SatelliteStory",
 		"live": "https://satellite-story.netlify.app/",
 		"poster": "/posters/satellite.jpg",
-		"poster_mini": "/mini/satellite.jpg"
+		"poster_big": "/posters/satellite-big.jpg"
 	},
 	"TinyHeaven": {
 		"slug": "TinyHeaven",
@@ -13,7 +13,7 @@
 		"github": "https://github.com/rqphy/TinyHeaven",
 		"live": "https://tiny-heaven.netlify.app/",
 		"poster": "/posters/tinyheaven.jpg",
-		"poster_mini": "/mini/tinyheaven.jpg"
+		"poster_big": "/posters/tinyheaven-big.jpg"
 	},
 	"Wonderstudios": {
 		"slug": "Wonderstudios",
@@ -21,7 +21,7 @@
 		"github": "https://github.com/rqphy/Wonderstudios",
 		"live": "https://wonderstudios.com/",
 		"poster": "/posters/wonderstudios.jpg",
-		"poster_mini": "/mini/wonderstudios.jpg"
+		"poster_big": "/posters/wonderstudios-big.jpg"
 	},
 	"Lactel": {
 		"slug": "Lactel",
@@ -29,15 +29,15 @@
 		"github": "https://github.com/rqphy/Lactel",
 		"live": "https://www.lactel.fr/",
 		"poster": "/posters/lactel.jpg",
-		"poster_mini": "/mini/lactel.jpg"
+		"poster_big": "/posters/lactel-big.jpg"
 	},
 	"LightExperience": {
-		"slug": "LightExperience",
-		"name": "Light Experience",
-		"github": "https://github.com/rqphy/LightExperience",
-		"live": "https://light-xp.netlify.app/",
-		"poster": "/posters/light.jpg",
-		"poster_mini": "/mini/light.jpg"
+		"slug": "Atlante3d",
+		"name": "Atlante 3D",
+		"github": "https://github.com/rqphy/Atlante3d",
+		"live": "https://www.atlante-3dexperience.com/",
+		"poster": "/posters/atlante.jpg",
+		"poster_big": "/posters/atlante-big.jpg"
 	},
 	"Motherssoccer": {
 		"slug": "Motherssoccer",
@@ -45,7 +45,7 @@
 		"github": "https://github.com/rqphy/Motherssoccer",
 		"live": "https://lab.wonderstudios.com/#Mothers-Soccer",
 		"poster": "/posters/motherssoccer.jpg",
-		"poster_mini": "/mini/motherssoccer.jpg"
+		"poster_big": "/posters/motherssoccer-big.jpg"
 	},
 	"aema": {
 		"slug": "aema",
@@ -53,7 +53,7 @@
 		"github": "https://github.com/rqphy/aema",
 		"live": "https://aemagroupe.fr/",
 		"poster": "/posters/aema.jpg",
-		"poster_mini": "/mini/aema.jpg"
+		"poster_big": "/posters/aema-big.jpg"
 	},
 	"AddictionAgency": {
 		"slug": "AddictionAgency",
@@ -61,6 +61,6 @@
 		"github": "https://github.com/rqphy/AddictionAgency",
 		"live": "https://www.addiction-agency.com/fr/",
 		"poster": "/posters/addiction.jpg",
-		"poster_mini": "/mini/addiction.jpg"
+		"poster_big": "/posters/addiction-big.jpg"
 	}
 }

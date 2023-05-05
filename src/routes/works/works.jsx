@@ -15,20 +15,10 @@ export default function Works() {
 	return (
 		<>
 			<section className="works__hero">
-				<div className="works__title">
-					<Text color="typo" tag="h1" size="l">
-						{frontProject?.name ?? "Project"}
-					</Text>
-				</div>
 				<div className="works__canvas">
 					<Suspense fallback={<Loader />}>
 						<Experience />
 					</Suspense>
-				</div>
-				<div className="works__cta">
-					<Button to={`/project/${frontProject?.slug}`}>
-						<Text>Discover</Text>
-					</Button>
 				</div>
 			</section>
 		</>

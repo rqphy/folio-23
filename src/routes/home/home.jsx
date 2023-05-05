@@ -30,7 +30,7 @@ export default function Home() {
 									className="hero__project"
 								>
 									<img
-										src={projects[el].poster_mini}
+										src={projects[el].poster}
 										alt={projects[el].name}
 									/>
 								</figure>
