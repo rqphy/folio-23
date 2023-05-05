@@ -32,10 +32,10 @@
 		"poster_big": "/posters/lactel-big.jpg"
 	},
 	"LightExperience": {
-		"slug": "LightExperience",
-		"name": "Light Experience",
-		"github": "https://github.com/rqphy/LightExperience",
-		"live": "https://light-xp.netlify.app/",
+		"slug": "Atlante3d",
+		"name": "Atlante 3D",
+		"github": "https://github.com/rqphy/Atlante3d",
+		"live": "https://www.atlante-3dexperience.com/",
 		"poster": "/posters/atlante.jpg",
 		"poster_big": "/posters/atlante-big.jpg"
 	},
