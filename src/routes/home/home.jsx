@@ -67,6 +67,11 @@ export default function Home() {
 					<Text>Experiences</Text>
 					<ul className="experiences__content">
 						<li className="experiences__item">
+							<Text>Atlante</Text>
+							<Text>Freelance</Text>
+							<Text>2023</Text>
+						</li>
+						<li className="experiences__item">
 							<Text>JPG</Text>
 							<Text>@Wonderstudios</Text>
 							<Text>2022</Text>
