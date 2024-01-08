@@ -143,6 +143,8 @@
 	}
 
 	.cta {
+		animation: scale_bounce 0.8s ease-in-out infinite 0.8s alternate;
+
 		@include large {
 			justify-self: left;
 		}
@@ -153,6 +155,11 @@
 			left: 50%;
 			transform: translateX(-50%);
 			z-index: 100;
+			animation: scale_bounce_mob 0.8s ease-in-out infinite 0.8s alternate;
+		}
+
+		p {
+			animation: scale_bounce 0.8s ease-in-out infinite 0.8s alternate;
 		}
 	}
 
@@ -359,5 +366,25 @@ footer {
 		@include small {
 			top: 3rem;
 		}
+	}
+}
+
+@keyframes scale_bounce {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.1);
+	}
+}
+
+@keyframes scale_bounce_mob {
+	0% {
+		transform: translateX(-50%) scale(1);
+	}
+
+	100% {
+		transform: translateX(-50%) scale(1.1);
 	}
 }
