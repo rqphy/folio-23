@@ -19,7 +19,6 @@
 		"slug": "Wonderstudios",
 		"name": "Wonderstudios",
 		"github": "https://github.com/rqphy/Wonderstudios",
-		"live": "https://wonderstudios.com/",
 		"poster": "/posters/wonderstudios.jpg",
 		"poster_big": "/posters/wonderstudios-big.jpg"
 	},
@@ -35,7 +34,6 @@
 		"slug": "Atlante3d",
 		"name": "Atlante 3D",
 		"github": "https://github.com/rqphy/Atlante3d",
-		"live": "https://www.atlante-3dexperience.com/",
 		"poster": "/posters/atlante.jpg",
 		"poster_big": "/posters/atlante-big.jpg"
 	},
@@ -43,7 +41,6 @@
 		"slug": "Motherssoccer",
 		"name": "Mother's Soccer",
 		"github": "https://github.com/rqphy/Motherssoccer",
-		"live": "https://lab.wonderstudios.com/#Mothers-Soccer",
 		"poster": "/posters/motherssoccer.jpg",
 		"poster_big": "/posters/motherssoccer-big.jpg"
 	},
