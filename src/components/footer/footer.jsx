@@ -7,13 +7,10 @@ export default function Footer() {
 			<div className="contact">
 				<p>Contact me : fdev.raphael@gmail.com</p>
 
-				<div className="contact__link">
-					<Link to="/works">
-						<Text tag="p" size="s">
-							Works
-						</Text>
-					</Link>
-				</div>
+				<p>
+					© {new Date().getFullYear()} Raphaël Ferreira. All rights
+					reserved.
+				</p>
 
 				<ul className="contact__socials">
 					<li>

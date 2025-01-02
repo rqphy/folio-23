@@ -295,7 +295,7 @@ footer {
 	font-family: var(--font_default);
 
 	@include small {
-		height: 100px;
+		height: 140px;
 		max-height: 500px;
 	}
 
@@ -310,13 +310,6 @@ footer {
 			justify-content: space-between;
 			gap: 1rem;
 		}
-
-		&__link {
-			@include small {
-				display: none;
-			}
-		}
-
 		&__socials {
 			display: flex;
 			gap: 1rem;
@@ -365,7 +358,7 @@ footer {
 		width: 100%;
 
 		@include small {
-			top: 3rem;
+			top: 6rem;
 		}
 	}
 }
