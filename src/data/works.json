@@ -1,48 +1,11 @@
 {
-	"SatelliteStory": {
-		"slug": "SatelliteStory",
-		"name": "Satellite Story",
-		"github": "https://github.com/rqphy/SatelliteStory",
-		"live": "https://satellite-story.netlify.app/",
-		"poster": "/posters/satellite.jpg",
-		"poster_big": "/posters/satellite-big.jpg"
-	},
-	"TinyHeaven": {
-		"slug": "TinyHeaven",
-		"name": "Tiny Heaven",
-		"github": "https://github.com/rqphy/TinyHeaven",
-		"live": "https://tiny-heaven.netlify.app/",
-		"poster": "/posters/tinyheaven.jpg",
-		"poster_big": "/posters/tinyheaven-big.jpg"
-	},
-	"Wonderstudios": {
-		"slug": "Wonderstudios",
-		"name": "Wonderstudios",
-		"github": "https://github.com/rqphy/Wonderstudios",
-		"poster": "/posters/wonderstudios.jpg",
-		"poster_big": "/posters/wonderstudios-big.jpg"
-	},
-	"Lactel": {
-		"slug": "Lactel",
-		"name": "Lactel",
-		"github": "https://github.com/rqphy/Lactel",
-		"live": "https://www.lactel.fr/",
-		"poster": "/posters/lactel.jpg",
-		"poster_big": "/posters/lactel-big.jpg"
-	},
-	"Atlante3d": {
-		"slug": "Atlante3d",
-		"name": "Atlante 3D",
-		"github": "https://github.com/rqphy/Atlante3d",
-		"poster": "/posters/atlante.jpg",
-		"poster_big": "/posters/atlante-big.jpg"
-	},
-	"Motherssoccer": {
-		"slug": "Motherssoccer",
-		"name": "Mother's Soccer",
-		"github": "https://github.com/rqphy/Motherssoccer",
-		"poster": "/posters/motherssoccer.jpg",
-		"poster_big": "/posters/motherssoccer-big.jpg"
+	"AddictionAgency": {
+		"slug": "AddictionAgency",
+		"name": "Addiction Agency",
+		"github": "https://github.com/rqphy/AddictionAgency",
+		"live": "https://www.addiction-agency.com/fr/",
+		"poster": "/posters/addiction.jpg",
+		"poster_big": "/posters/addiction-big.jpg"
 	},
 	"aema": {
 		"slug": "aema",
@@ -52,12 +15,49 @@
 		"poster": "/posters/aema.jpg",
 		"poster_big": "/posters/aema-big.jpg"
 	},
-	"AddictionAgency": {
-		"slug": "AddictionAgency",
-		"name": "Addiction Agency",
-		"github": "https://github.com/rqphy/AddictionAgency",
-		"live": "https://www.addiction-agency.com/fr/",
-		"poster": "/posters/addiction.jpg",
-		"poster_big": "/posters/addiction-big.jpg"
+	"TinyHeaven": {
+		"slug": "TinyHeaven",
+		"name": "Tiny Heaven",
+		"github": "https://github.com/rqphy/TinyHeaven",
+		"live": "https://tiny-heaven.netlify.app/",
+		"poster": "/posters/tinyheaven.jpg",
+		"poster_big": "/posters/tinyheaven-big.jpg"
+	},
+	"Lactel": {
+		"slug": "Lactel",
+		"name": "Lactel",
+		"github": "https://github.com/rqphy/Lactel",
+		"live": "https://www.lactel.fr/",
+		"poster": "/posters/lactel.jpg",
+		"poster_big": "/posters/lactel-big.jpg"
+	},
+	"SatelliteStory": {
+		"slug": "SatelliteStory",
+		"name": "Satellite Story",
+		"github": "https://github.com/rqphy/SatelliteStory",
+		"live": "https://satellite-story.netlify.app/",
+		"poster": "/posters/satellite.jpg",
+		"poster_big": "/posters/satellite-big.jpg"
+	},
+	"Atlante3d": {
+		"slug": "Atlante3d",
+		"name": "Atlante 3D",
+		"github": "https://github.com/rqphy/Atlante3d",
+		"poster": "/posters/atlante.jpg",
+		"poster_big": "/posters/atlante-big.jpg"
+	},
+	"Wonderstudios": {
+		"slug": "Wonderstudios",
+		"name": "Wonderstudios",
+		"github": "https://github.com/rqphy/Wonderstudios",
+		"poster": "/posters/wonderstudios.jpg",
+		"poster_big": "/posters/wonderstudios-big.jpg"
+	},
+	"Motherssoccer": {
+		"slug": "Motherssoccer",
+		"name": "Mother's Soccer",
+		"github": "https://github.com/rqphy/Motherssoccer",
+		"poster": "/posters/motherssoccer.jpg",
+		"poster_big": "/posters/motherssoccer-big.jpg"
 	}
 }
