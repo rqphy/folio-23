@@ -31,6 +31,14 @@
 		"poster": "/posters/lactel.jpg",
 		"poster_big": "/posters/lactel-big.jpg"
 	},
+	"GeoQuiz": {
+		"slug": "GeoQuiz",
+		"name": "GeoQuiz",
+		"github": "https://github.com/rqphy/GeoQuiz",
+		"live": "https://geoquiz.raphael-ferreira.com/",
+		"poster": "/posters/geoquiz.jpg",
+		"poster_big": "/posters/geoquiz-big.jpg"
+	},
 	"SatelliteStory": {
 		"slug": "SatelliteStory",
 		"name": "Satellite Story",
@@ -52,12 +60,5 @@
 		"github": "https://github.com/rqphy/Wonderstudios",
 		"poster": "/posters/wonderstudios.jpg",
 		"poster_big": "/posters/wonderstudios-big.jpg"
-	},
-	"Motherssoccer": {
-		"slug": "Motherssoccer",
-		"name": "Mother's Soccer",
-		"github": "https://github.com/rqphy/Motherssoccer",
-		"poster": "/posters/motherssoccer.jpg",
-		"poster_big": "/posters/motherssoccer-big.jpg"
 	}
 }
