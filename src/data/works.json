@@ -7,13 +7,13 @@
 		"poster": "/posters/addiction.jpg",
 		"poster_big": "/posters/addiction-big.jpg"
 	},
-	"aema": {
-		"slug": "aema",
-		"name": "AEMA",
-		"github": "https://github.com/rqphy/aema",
-		"live": "https://aemagroupe.fr/",
-		"poster": "/posters/aema.jpg",
-		"poster_big": "/posters/aema-big.jpg"
+	"Lactel": {
+		"slug": "Lactel",
+		"name": "Lactel",
+		"github": "https://github.com/rqphy/Lactel",
+		"live": "https://www.lactel.fr/",
+		"poster": "/posters/lactel.jpg",
+		"poster_big": "/posters/lactel-big.jpg"
 	},
 	"TinyHeaven": {
 		"slug": "TinyHeaven",
@@ -23,14 +23,6 @@
 		"poster": "/posters/tinyheaven.jpg",
 		"poster_big": "/posters/tinyheaven-big.jpg"
 	},
-	"Lactel": {
-		"slug": "Lactel",
-		"name": "Lactel",
-		"github": "https://github.com/rqphy/Lactel",
-		"live": "https://www.lactel.fr/",
-		"poster": "/posters/lactel.jpg",
-		"poster_big": "/posters/lactel-big.jpg"
-	},
 	"GeoQuiz": {
 		"slug": "GeoQuiz",
 		"name": "GeoQuiz",
@@ -39,14 +31,6 @@
 		"poster": "/posters/geoquiz.jpg",
 		"poster_big": "/posters/geoquiz-big.jpg"
 	},
-	"SatelliteStory": {
-		"slug": "SatelliteStory",
-		"name": "Satellite Story",
-		"github": "https://github.com/rqphy/SatelliteStory",
-		"live": "https://satellite-story.netlify.app/",
-		"poster": "/posters/satellite.jpg",
-		"poster_big": "/posters/satellite-big.jpg"
-	},
 	"Atlante3d": {
 		"slug": "Atlante3d",
 		"name": "Atlante 3D",
@@ -54,11 +38,20 @@
 		"poster": "/posters/atlante.jpg",
 		"poster_big": "/posters/atlante-big.jpg"
 	},
-	"Wonderstudios": {
-		"slug": "Wonderstudios",
-		"name": "Wonderstudios",
-		"github": "https://github.com/rqphy/Wonderstudios",
-		"poster": "/posters/wonderstudios.jpg",
-		"poster_big": "/posters/wonderstudios-big.jpg"
+	"aema": {
+		"slug": "aema",
+		"name": "AEMA",
+		"github": "https://github.com/rqphy/aema",
+		"live": "https://aemagroupe.fr/",
+		"poster": "/posters/aema.jpg",
+		"poster_big": "/posters/aema-big.jpg"
+	},
+	"SatelliteStory": {
+		"slug": "SatelliteStory",
+		"name": "Satellite Story",
+		"github": "https://github.com/rqphy/SatelliteStory",
+		"live": "https://satellite-story.netlify.app/",
+		"poster": "/posters/satellite.jpg",
+		"poster_big": "/posters/satellite-big.jpg"
 	}
 }
