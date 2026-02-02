@@ -15,6 +15,14 @@
 		"poster": "/posters/lactel.jpg",
 		"poster_big": "/posters/lactel-big.jpg"
 	},
+	"GeoBoss": {
+		"slug": "GeoBoss",
+		"name": "GeoBoss",
+		"github": "https://github.com/rqphy/GeoBoss",
+		"live": "https://geoboss.onrender.com/",
+		"poster": "/posters/geoboss.jpg",
+		"poster_big": "/posters/geoboss-big.jpg"
+	},
 	"TinyHeaven": {
 		"slug": "TinyHeaven",
 		"name": "Tiny Heaven",
@@ -22,14 +30,6 @@
 		"live": "https://tiny-heaven.netlify.app/",
 		"poster": "/posters/tinyheaven.jpg",
 		"poster_big": "/posters/tinyheaven-big.jpg"
-	},
-	"GeoQuiz": {
-		"slug": "GeoQuiz",
-		"name": "GeoQuiz",
-		"github": "https://github.com/rqphy/GeoQuiz",
-		"live": "https://geoquiz.raphael-ferreira.com/",
-		"poster": "/posters/geoquiz.jpg",
-		"poster_big": "/posters/geoquiz-big.jpg"
 	},
 	"Atlante3d": {
 		"slug": "Atlante3d",
