@@ -8,7 +8,7 @@ export default function Header() {
 				<Link to="/">
 					<Text tag="p">Raphaël Ferreira</Text>
 				</Link>
-				<Text tag="p">Front-end / Creative developper</Text>
+				<Text tag="p">Fullstack / Creative developper</Text>
 				<nav className="header__nav">
 					<Link to="/works">
 						<Text tag="p" size="s">
