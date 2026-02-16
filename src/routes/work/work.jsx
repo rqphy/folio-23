@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import data from "./../../data/works.json"
 import ReactMarkdown from "react-markdown"
+import rehypeHighlight from "rehype-highlight"
+import "highlight.js/styles/github.css"
 
 export default function Work() {
 	const { slug } = useParams()
@@ -11,7 +13,7 @@ export default function Work() {
 	useEffect(() => {
 		async function fetchReadme() {
 			const response = await fetch(
-				`https://api.github.com/repos/rqphy/${slug}/readme`
+				`https://api.github.com/repos/rqphy/${slug}/readme`,
 			)
 			const data = await response.json()
 			const readmeResponse = await fetch(data.download_url)
@@ -72,7 +74,9 @@ export default function Work() {
 						<img src={data[slug].poster_big} alt="" srcSet="" />
 					</figure>
 					<div className="project__md">
-						<ReactMarkdown>{readme}</ReactMarkdown>
+						<ReactMarkdown rehypePlugins={[rehypeHighlight]}>
+							{readme}
+						</ReactMarkdown>
 					</div>
 				</div>
 			</section>

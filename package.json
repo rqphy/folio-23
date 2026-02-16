@@ -16,6 +16,7 @@
     "react-dom": "^18.2.0",
     "react-markdown": "^8.0.6",
     "react-router-dom": "^6.6.1",
+    "rehype-highlight": "^7.0.2",
     "three": "^0.145.0",
     "vite-plugin-glsl": "^1.1.2",
     "zustand": "4.1"
